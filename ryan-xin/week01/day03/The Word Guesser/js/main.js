@@ -79,21 +79,25 @@
 // - Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
 // - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
 // - Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
-const wordLetter = ["F", "O", "X"];
-let guessedLetter = ["_", "_", "_"];
+const wordLetter = ["F", "O", "X", "X"];
+let guessedLetter = ["_", "_", "_", "_"];
 let hangmanState = 0;
+let reward = 0;
+const randomReward = 50;
 
 const guesseLetter = function(letter) {
   // if letter is included
   if(wordLetter.indexOf(letter) === -1) {
     console.log("Please try again!");
     hangmanState += 1;
+    reward -= randomReward;
     if(hangmanState === 6) {
       console.log("You lost!");
       console.log("This is a hangman img.")
     }
   } else {
     console.log("Your guess was correct!");
+    reward += randomReward;
     // check which letter it is in wordLetter
     for (var i = 0; i < wordLetter.length; i++) {
       if(letter === wordLetter[i]) {
@@ -106,6 +110,7 @@ const guesseLetter = function(letter) {
     } // for loop
   } // if else
   console.log(guessedLetter);
+  console.log(`Your reward is $${reward}.`);
 }; // guesseLetter
 
 
@@ -156,7 +161,7 @@ const sumArray = function(arr) {
   for( i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
-  console.log(sum);
+  return sum;
 };
 
 const multiplyArray= function(arr) {
@@ -164,7 +169,7 @@ const multiplyArray= function(arr) {
   for( i = 0; i < arr.length; i++) {
     sum *= arr[i];
   }
-  console.log(sum);
+  return sum;
 };
 
 
@@ -174,8 +179,9 @@ const multiplyArray= function(arr) {
 // 5. Define a function `reverseString` that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
 const reverseString = function(str) {
   const newString = str.split("").reverse().join("");
-  console.log(newString);
+  return newString;
 };
+
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
 const findLongestWord = function(arr) {
   let longest = arr[0];
