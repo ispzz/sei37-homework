@@ -1,0 +1,13 @@
+echo "welcome to the shell"
+
+#set the prompt to show only the last file
+export PS1='\W$ '
+
+#stop zsh warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Make a really large limit to the command history
+export HISTFILESIZE=1000000
+
+# Create a short alias for 'ls -l'
+alias ll='ls -l'
