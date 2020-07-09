@@ -1,0 +1,37 @@
+h2 {
+	margin: 0 ;
+font-family: "Raleway", sans-serif;
+background-color: #F15B31;
+color: #FFFFFF;
+padding: 20px 10px 20px 10px;
+letter-spacing: 1px;
+font-weight: 200;
+font-size: 25px;
+text-align: center;
+}
+
+body {
+	width: 850px;
+	margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+#rite {
+   text-align: center;
+   color: green;
+ }
+
+ #wrong {
+	 text-align: center;
+   color: red;
+ }
+
+.btn:hover {
+	background-color: #3e8e41;
+	color: white;
+}
+
+#rewards {
+	background-color: #3e8e41;
+
+}
