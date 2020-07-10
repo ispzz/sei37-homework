@@ -65,6 +65,7 @@ const validateCreditCard = function(cardNumber) {
   }
 };
 
+
 validateCreditCard("9999-9999-8888-0000");
 validateCreditCard("6666-6666-6666-1666");
 
@@ -72,3 +73,15 @@ validateCreditCard("a923-3211-9c01-1112");
 validateCreditCard("4444-4444-4444-4444");
 validateCreditCard("1111-1111-1111-1110");
 validateCreditCard("6666-6666-6666-6661");
+
+function {
+  if {
+    return;
+  }
+}
+
+function {
+  if {
+    break;
+  }
+}

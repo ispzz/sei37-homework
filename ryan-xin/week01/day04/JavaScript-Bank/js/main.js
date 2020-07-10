@@ -62,13 +62,12 @@ const deposit = function(name, amount) {
 const withdraw = function(name, amount) {
   for( let i = 0; i < jsBank.length; i++ ) {
     if(jsBank[i].name === name) {
-      jsBank[i].balance -= amount;
       if(jsBank[i].balance < 0){ // transfer cannot be completed if the balance less than 0
-        jsBank[i].balance += amount; // add the amount back
         console.log("You don't have enough money!");
         console.log(`Name: ${jsBank[i].name}; Balance: $${jsBank[i].balance}.`);
         return jsBank[i].balance;
       } else {
+        jsBank[i].balance -= amount;
         console.log(`Name: ${jsBank[i].name}; Balance: $${jsBank[i].balance}.`);
         return jsBank[i].balance;
       }

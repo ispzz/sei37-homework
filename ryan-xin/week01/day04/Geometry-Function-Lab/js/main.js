@@ -20,6 +20,8 @@ const isSquare = function(rect) {
 }; // isSquare
 isSquare(rectangle);
 console.log(isSquare(rectangle));
+
+
 // area(rect) - Returns the area of the rectangle
 const area = function(rect) {
   const rectArea = rect.length * rect.width;
@@ -52,14 +54,14 @@ console.log("Triangle");
 
 // Given a triangle object like the one below, write the following functions:
 const triangle = {
-  sideA: 3,
+  sideA: 4,
   sideB: 4,
   sideC: 4
 };
 
 // isEquilateral(tri) - Returns whether the triangle is equilateral or not
 const isEquilateral = function(tri) {
-  if(tri.sideA === tri.sideB === tri.sideC) {
+  if(tri.sideA === tri.sideB && tri.sideA === tri.sideC && tri.sideB === tri.sideC ) {
     return `It is equilateral.`;
   } else {
     return `It is not equilateral.`;
