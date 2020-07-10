@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 50px;
+    justify-content: center;
+    place-items: center;
+}
+h4 {
+    font-size : 40px;
+    width : 70px;
+    height : 60px;
+    place-items: center;
+    text-align: center;
+    background-color : grey;
+
+}
+h4:hover{
+    cursor: pointer;
+}
+button {
+    grid-column-start: 4; 
+    place-items: center;
+}
+#sum {
+    grid-row-start : 1;
+    grid-column-start: 4;
+}
+#multiply {
+    grid-row-start : 2;
+    grid-column-start: 4;
+}
+#minus {
+    grid-row-start : 3;
+    grid-column-start: 4;
+}
+#divide {
+    grid-row-start : 4;
+    grid-column-start: 4;
+}
+input {
+    margin-top : 170px;
+    margin-left : 38.5%;
+    height : 24px;
+    width : 300px;
+}
