@@ -1,5 +1,4 @@
 console.log("sergeSays")
-// Serge is a french name
 
 // * Serge answers 'Sure.' if you ask him a question.
 
