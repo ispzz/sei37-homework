@@ -51,7 +51,6 @@ const guessLetter = function(letter) {
 }
 
 
-
  // for (var i = 0; i < array.length; i++) {
  //   array[i]
  // }
@@ -63,7 +62,10 @@ guessLetter('z');
 // guessLetter('O');
 
 
-// console.log('!!!!!', secretWordSpaces);
+
+
+
+
 
 
 
