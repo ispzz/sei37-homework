@@ -22,19 +22,19 @@ const raindrops = function(number){
   if(number % 3 === 0 && number % 5 === 0 && number % 7 === 0){
     return 'PlingPlangPlong';
   } else if(number % 3 === 0 && number % 5 === 0){
-    return 'PlingPlang';
+      return 'PlingPlang';
   } else if(number % 3 === 0 && number % 7 === 0){
-    return 'PlingPlong';
+      return 'PlingPlong';
   } else if(number % 5 === 0 && number % 7 === 0){
-    return 'PlangPlong';
+      return 'PlangPlong';
   } else if(number % 3 === 0){
-    return 'Pling';
+      return 'Pling';
   } else if(number % 5 === 0){
-    return 'Plang';
+      return 'Plang';
   } else if(number % 7 === 0){
-    return 'Plong';
+      return 'Plong';
   } else {
-    return `${number} has neither 3, 5 nor 7 as a factor.`;
+      return `${number} has neither 3, 5 nor 7 as a factor.`;
   }
 }
 
