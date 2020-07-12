@@ -13,60 +13,63 @@
 // and if not, it should congratulate the user for winning the game.
 // - Pretend you don't know the word, and call guessLetter multiple times with various letters to check that your program works.
 // ​
+//
+//
+// define the two arrays, one for the letters of the secret word, and one for the blank spaces that will be filled in one by one
+// create a function guessLetter that takes one argument letter, and make sure it works by printing out letter to the console from inside the function
+// so far so good? Now write a loop (inside the guessLetter function) that loops over the secret letters array and prints out each letter to the console
+// once your loop is working, instead of printing out each letter of the secret word, use an if statement to check if the letter argument (the user's guess) is equal to the current letter from the secret letters array.... if so, print out "Your guess was correct!"
+// etc...
 
+console.log('Word Guesser!')
 
+const secretWord = [ 'b', 'a', 'b', 'b', 'l', 'e' ];
+const secretBlank = [ '_', '_', '_', '_', '_' ] ;
 
-const secretWordLetters = [
-  "F",
-  "O",
-  "X",
-  "X",
-];
+let correctGuessCount = 0;
 
-const secretWordSpaces = [
-  "_",
-  "_",
-  "_",
-  "_",
-];
+const guessLetter = function ( letter ) {
 
+  console.log(`Your guess is ${letter}`);
 
+//Check if the user's guess actually matches any of the letters in the secret word
 
-const guessLetter = function(letter) {
-  const indexOfLetter = secretWordLetters.indexOf(letter);
+// 1. write a loop that prints out each of the secret letters in the secret word
+// 2. instead of printing the secret letter out , check if it maches the user's guess letter
+  let correctGuessFound = false;
 
-  if (indexOfLetter >= 0) {
-    console.log(`The letter exists!`);
-    secretWordSpaces[indexOfLetter] = letter;
-  } else {
-    let amountOfEmptyLettersLeft = 0;
-    for (let i = 0; i < secretWordSpaces.length; i++)  {
-      if (secretWordSpaces[i] === '_') {
-          amountOfEmptyLettersLeft += 1;
-        }
-      }
-    console.log('you have this many letters left to guess:', amountOfEmptyLettersLeft);
-  }
-  console.log(secretWordSpaces);
-}
+  for( let i = 0 ; i < secretWord.length ; i++ ){
+    // const currentSecretLetter = secretWord[ i ];
+    // console.log( currentSecretLetter );
 
+    //Check if the current secret letter matches the user's guess
+    if( secretWord[i] === letter  ) {
+        console.log('Correct guess!');
+        secretBlank[i] = letter; // FIll in the correct guess at the corresponding blank position
+        console.log( secretBlank ); //Print out what the blanks look like now
+        correctGuessFound = true;
+    }
+    // This gives us too many false negatives
+    // else {
+    //   //No match!
+    //   console.log('Sorry, bad guess!')
+    //
+    // }
 
- // for (var i = 0; i < array.length; i++) {
- //   array[i]
- // }
+  } //for
 
-// if greater than 0....
-guessLetter('z');
-// guessLetter('ZZ');
-// guessLetter('F');
-// guessLetter('O');
+   if( correctGuessFound === false ) {
+     console.log('Bad guess!');
+    }
 
+}; //guess letter//
 
+// Call it once for testing
 
-
-
-
-
+ guessLetter('a');
+ guessLetter('b');
+ guessLetter('c');
+ guessLetter('d');
 
 
 

@@ -10,43 +10,12 @@
 // It should also figure out if there are any more letters that need to be guessed, and if not, it should congratulate the user for winning the game.
 // Pretend you don't know the word, and call guessLetter multiple times with various letters to check that your program works.
 
-const word = ['F', 'O', 'X'];
-let guessedWord = ['_','_','_'];
+const secretWord = ['b','a','b','b','l','e'];
+const secretBlank = ['_','_','_','_','_','_'];
 
-function guessLetter(letter){
-
-  let goodGuess = false;
-  let moreToGuess = false;
-
-  for(let i = 0; i < word.length; i++){
-    if(word[i] === letter){
-      guessedWord[i] = letter;
-      goodGuess = true;
-    }
-    if(guessedWord[i] === '_'){
-        moreToGuess = true;
-    }
-  }
-    if(goodGuess) {
-      console.log(`Congratulation! you guessed a correct letter`);
-      console.log(guessedWord.join(''));
-
-    if(!moreToGuess){
-        console.log(`You WON!`);
-
-    }
-  } else {
-    console.log('Incorrect guess Try Again');
-  }
-}
-
-guessLetter('X');
-guessLetter('B');
-guessLetter('F');
-guessLetter('D');
-guessLetter('A');
-guessLetter('O');
-guessLetter('X');
+const guessLetter = function ( letter ) {
+  console.log(`Current guess is: ${letter}`);
+}; // guessLetter()
 
 
 
