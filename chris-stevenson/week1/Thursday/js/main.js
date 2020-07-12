@@ -60,8 +60,8 @@ console.log('');
 console.log('Part 2, Triangle');
 
 const triangle = {
-  sideA: 6,
-  sideB: 5,
+  sideA: 16,
+  sideB: 15,
   sideC: 10
 };
 
@@ -251,3 +251,113 @@ console.log(bank.accounts);
 bank.deposit('Chris', 46);
 bank.withdraw('Todd', 100);
 bank.transfer('Chris', 'Todd', 20);
+
+
+// Credit Card Validation
+// You're starting your own credit card business. You've come up with a new way to validate credit cards with a simple function called validateCreditCard that returns true or false.
+//
+// Here are the rules for a valid number:
+//
+// Number must be 16 digits, all of them must be numbers
+// You must have at least two different digits represented (all of the digits cannot be the same)
+// The final digit must be even
+// The sum of all the digits must be greater than 16
+// The following credit card numbers are valid:
+//
+// 9999-9999-8888-0000
+// 6666-6666-6666-1666
+// The following credit card numbers are invalid:
+//
+// a923-3211-9c01-1112 invalid characters
+// 4444-4444-4444-4444 only one type of number
+// 1111-1111-1111-1110 sum less than 16
+// 6666-6666-6666-6661 odd final number
+// Example
+// validateCreditCard('9999-9999-8888-0000'); // Returns: true
+// Hint: Remove the dashed from the input string before checking if the input credit card number is valid.
+//
+// Bonus: Return an object indicating whether the credit card is valid, and if not, what the error is
+//
+// { valid: true, number: 'a923-3211-9c01-1112' }
+// { valid: false, number: 'a923-3211-9c01-1112', error: ‘wrong_length’ }
+// Double Bonus: Make your credit card scheme even more advanced! What are the rules, and what are some numbers that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm for inspiration.
+
+console.log('');
+console.log('Validate Credit Card');
+
+const validateCreditCard = function(ccNumber){
+  //Turn the CC Number into an array
+  let ccArray = ccNumber.toString().split('')
+  //remove any dashes
+  for (let i = 0; i < ccArray.length; i++) {
+    if(ccArray[i] === '-'){
+      ccArray.splice(i, 1);
+    }
+  }
+
+  //redefine the CC number with dashes removed
+  ccNumber = ccArray.join('');
+  //redefine the ccArray with dashes removed
+  ccArray = ccNumber.split('');
+  //Loop to turn each number inside the array to an integer
+  for (let i = 0; i < ccArray.length; i++) {
+    ccArray[i] = parseInt(ccArray[i]);
+  }
+
+  //Create errorMessage object which will diagnose errors and serve as final validation
+  const finalMessage = {errors: []};
+  //Start to check conditions
+  //Check that the credit card length is 16 digits
+  if(ccArray.length != 16) {
+    finalMessage.errors.push({error: 'The Credit Card number must be exactly 16 digits.'});
+  }
+  //Check if each digit of the credit card is the same
+  let sameTally = 0;
+  for (let i = 0; i < ccArray.length; i++) {
+    if(ccArray[0] === ccArray[i]) {
+      sameTally += 1;
+    }
+    if(sameTally === ccArray.length) {
+      finalMessage.errors.push({error: 'The Credit Card cannot be entirely the same number.'});
+    }
+  }
+  //Check if final digit is an even number
+  if(ccArray[ccArray.length - 1] % 2 != 0){
+    finalMessage.errors.push({error: 'The Credit Card number must end in an even number.'});
+  }
+  //Check that sum of all digits is greater than 16
+  const sumArray = function(array){
+    return array.reduce((a, b) => a + b);
+  };
+  if(sumArray(ccArray) <= 16) {
+    finalMessage.errors.push({error: 'The sum of all digits in the Credit Card number must be greater than 16.'});
+  }
+  //Check for invalid characters
+  for (let i = 0; i < ccArray.length; i++) {
+    if(Number.isInteger(ccArray[i]) === false){
+      finalMessage.errors.push({error: 'The input Credit Card number contains illegal characters.'});
+      break;
+    }
+  }
+  //Check to see if we have any errors, if not then print that the card is valid
+  if(finalMessage.errors.length === 0) {
+    console.log(`You have a valid Credit Card number of ${ccNumber}.`);
+    return true;
+  } else {
+    console.log(`There is at least one error with your credit card number ${ccNumber}:\n`);
+    console.log(finalMessage);
+    return false;
+  }
+  // if(ccNumber.toString().length === 16 && Number.isInteger(ccNumber) && ){
+  //
+  // } else {
+  // }
+}
+
+validateCreditCard(1234567890123456); //Correct CC Number
+validateCreditCard('123456789f123456'); //incorrect character in middle
+validateCreditCard(123456789012345); //Only 15 Didgets
+validateCreditCard(1111111111111111); //All number one
+validateCreditCard(11111111111111); //All number one
+validateCreditCard('9999-9999-8888-0000'); //Should be valid
+validateCreditCard('a923-3211-9c01-1112'); //Invalid characters
