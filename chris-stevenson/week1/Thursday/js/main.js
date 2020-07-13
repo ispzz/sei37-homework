@@ -60,41 +60,41 @@ console.log('');
 console.log('Part 2, Triangle');
 
 const triangle = {
-  sideA: 16,
-  sideB: 15,
+  sideA: 10,
+  sideB: 10,
   sideC: 10
 };
 
 const triangleCheck = {
-  isEquilateral: function(side1, side2, side3) {
-    if(triangleCheck.validTriangle(side1, side2, side3)) {
-      if(side1 === side2 && side1 === side3){
+  isEquilateral: function(triangle) {
+    if(triangleCheck.validTriangle(triangle)) {
+      if(triangle.sideA === triangle.sideB && triangle.sideA === triangle.sideC){
         return true;
       } else {
         return false;
       }
     }
   },
-  isIsosceles: function(side1, side2, side3) {
-    if(triangleCheck.validTriangle(side1, side2, side3)) {
-      if(side1 === side2 || side1 === side3 || side2 === side3){
+  isIsosceles: function(triangle) {
+    if(triangleCheck.validTriangle(triangle)) {
+      if(triangle.sideA === triangle.sideB || triangle.sideA === triangle.sideC || triangle.sideB === triangle.sideC){
         return true;
       } else {
         return false;
       }
     }
   },
-  area: function(side1, side2, side3) {
-    if(triangleCheck.validTriangle(side1, side2, side3)) {
-        halfPerimiter = (side1 + side2 + side3)/2;
-        return Math.sqrt(halfPerimiter*((halfPerimiter-side1)*(halfPerimiter-side2)*(halfPerimiter-side3)));
+  area: function(triangle) {
+    if(triangleCheck.validTriangle(triangle)) {
+        halfPerimiter = (triangle.sideA + triangle.sideB + triangle.sideC)/2;
+        return Math.sqrt(halfPerimiter*((halfPerimiter-triangle.sideA)*(halfPerimiter-triangle.sideB)*(halfPerimiter-triangle.sideC)));
       }
   },
-  isObtuse: function(side1, side2, side3) {
-    if(triangleCheck.validTriangle(side1, side2, side3)) {
-      const longSide = Math.max(side1, side2, side3);
-      const shortSide = Math.min(side1, side2, side3);
-      const medSide = side1 + side2 + side3 - longSide - shortSide;
+  isObtuse: function(triangle) {
+    if(triangleCheck.validTriangle(triangle)) {
+      const longSide = Math.max(triangle.sideA, triangle.sideB, triangle.sideC);
+      const shortSide = Math.min(triangle.sideA, triangle.sideB, triangle.sideC);
+      const medSide = triangle.sideA + triangle.sideB + triangle.sideC - longSide - shortSide;
       if (longSide**2 > (shortSide**2 + medSide**2)) {
         return true;
       }
@@ -103,9 +103,9 @@ const triangleCheck = {
       }
     }
   },
-  validTriangle: function(side1, side2, side3) {
-    let longSide = Math.max(side1, side2, side3);
-    if(longSide >= (side1 + side2 + side3 - longSide)) {
+  validTriangle: function(triangle) {
+    let longSide = Math.max(triangle.sideA, triangle.sideB, triangle.sideC);
+    if(longSide >= (triangle.sideA + triangle.sideB + triangle.sideC - longSide)) {
       console.log('Triangle is invalid. Please ensure that a+b > c');
       return false;
   } else {
@@ -114,10 +114,10 @@ const triangleCheck = {
 }
 }
 
-console.log(triangleCheck.isEquilateral(triangle.sideA ,triangle.sideB, triangle.sideC));
-console.log(triangleCheck.isIsosceles(triangle.sideA ,triangle.sideB, triangle.sideC));
-console.log(triangleCheck.area(triangle.sideA ,triangle.sideB, triangle.sideC));
-console.log(triangleCheck.isObtuse(triangle.sideA ,triangle.sideB, triangle.sideC));
+console.log(triangleCheck.isEquilateral(triangle));
+console.log(triangleCheck.isIsosceles(triangle));
+console.log(triangleCheck.area(triangle));
+console.log(triangleCheck.isObtuse(triangle));
 
 
 //  js-homework-5.md
@@ -225,6 +225,7 @@ const bank = {
       if(bank.accounts[names].name === inputName1) {
         if(inputBalance > bank.accounts[names].balance){
           console.log(`${inputName1}'s account currently only holds $${bank.accounts[names].balance} so you cannot withdraw the requested amount.`);
+          break;
         } else{
           bank.accounts[names].balance -= inputBalance;
           personOneBalance = bank.accounts[names].balance;
@@ -294,7 +295,6 @@ const validateCreditCard = function(ccNumber){
       ccArray.splice(i, 1);
     }
   }
-
   //redefine the CC number with dashes removed
   ccNumber = ccArray.join('');
   //redefine the ccArray with dashes removed
@@ -303,7 +303,6 @@ const validateCreditCard = function(ccNumber){
   for (let i = 0; i < ccArray.length; i++) {
     ccArray[i] = parseInt(ccArray[i]);
   }
-
   //Create errorMessage object which will diagnose errors and serve as final validation
   const finalMessage = {errors: []};
   //Start to check conditions
