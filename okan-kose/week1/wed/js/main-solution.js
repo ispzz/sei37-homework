@@ -13,62 +13,6 @@
 // and if not, it should congratulate the user for winning the game.
 // - Pretend you don't know the word, and call guessLetter multiple times with various letters to check that your program works.
 // ​
-
-
-
-const secretWordLetters = [
-  "F",
-  "O",
-  "X",
-  "X",
-];
-
-const secretWordSpaces = [
-  "_",
-  "_",
-  "_",
-  "_",
-];
-
-
-
-const guessLetter = function(letter) {
-  const indexOfLetter = secretWordLetters.indexOf(letter);
-
-  if (indexOfLetter >= 0) {
-    console.log(`The letter exists!`);
-    secretWordSpaces[indexOfLetter] = letter;
-  } else {
-    let amountOfEmptyLettersLeft = 0;
-    for (let i = 0; i < secretWordSpaces.length; i++)  {
-      if (secretWordSpaces[i] === '_') {
-          amountOfEmptyLettersLeft += 1;
-        }
-      }
-    console.log('you have this many letters left to guess:', amountOfEmptyLettersLeft);
-  }
-  console.log(secretWordSpaces);
-}
-
-
-
- // for (var i = 0; i < array.length; i++) {
- //   array[i]
- // }
-
-// if greater than 0....
-guessLetter('z');
-// guessLetter('ZZ');
-// guessLetter('F');
-// guessLetter('O');
-
-
-// console.log('!!!!!', secretWordSpaces);
-
-
-
-
-
 // ## Bonus: Make it more like Wheel of Fortune:
 // - Start with a reward amount of $0
 // - Every time a letter is guessed, generate a random amount and reward the user if they found a letter (multiplying the reward if multiple letters found), otherwise subtract from their reward.
@@ -78,7 +22,6 @@ guessLetter('z');
 // - Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
 // - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
 // - Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
-// ​
 // ---
 // ​
 // # Array and Functions Bonus Material
@@ -93,3 +36,57 @@ guessLetter('z');
 // 5. Define a function `reverseString` that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
 // 6. Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
 // 7. Write a function `filterLongWords` that takes an array of words and an number `i` and returns the array of words that are longer than i.
+//
+//
+// If you're not sure where to start, try and get the simplest parts working first:
+// define the two arrays, one for the letters of the secret word, and one for the blank spaces that will be filled in one by one
+// create a function guessLetter that takes one argument letter, and make sure it works by printing out letter to the console from inside the function
+// so far so good? Now write a loop (inside the guessLetter function) that loops over the secret letters array and prints out each letter to the console
+// once your loop is working, instead of printing out each letter of the secret word, use an if statement to check if the letter argument (the user's guess) is equal to the current letter from the secret letters array.... if so, print out "Your guess was correct!"
+// etc...
+
+
+
+const secretWord  = [ 'b', 'a', 'b', 'b', 'l', 'e' ];
+const secretBlank = [ '_', '_', '_', '_', '_', '_' ];
+
+// let correctGuessCount = 0;
+const guessLetter = function( letter ) {
+  console.log(`Your guess is: ${letter}`);
+
+  // Check if the user`s guess actually matches any of the letters in the secret words
+  // 1. write a loop that prints out each of the secret letters in the secret word
+  // 2. instead of printing the secret letter out, check if it matches the user`s guess letter
+  let correctGuessFound = false;
+
+  for (let i=0; i < secretWord.length; i++){
+    const currentSecretLetter = secretWord[i];
+    // console.log(currentSecretLetter);
+
+    // Check if the current secret letter matches the user`s guess
+    if ( secretWord[i] === letter ){
+      console.log('Correct guess!');
+      secretBlank[i] = letter; // fill in the correct guess at the corresponding blank position
+      console.log( secretBlank ); // Print out what the blanks look like now
+      correctGuessFound = true;
+    }
+
+
+    // This gives us too many false negatives!
+    // } else {
+    //   console.log('Sorry, bad guess!');
+    // }
+
+  } // for
+  if( correctGuessFound === false ){
+    console.log('Bad guess!');
+  }
+  // console.log('correctGuessFound = ', correctGuessFound);
+
+}; // guessLetter()
+
+// Call it once for testing
+guessLetter('b');
+guessLetter('a');
+guessLetter('l');
+guessLetter('e');
