@@ -1,5 +1,6 @@
 console.log(`%cMTA Lab`, "color: green; font-size: 20px; font-weight: bold");
 
+
 // MTA stops objects
 const mta = {
   N: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
@@ -10,31 +11,27 @@ const mta = {
 
 // Single line function
 const singleTrip = function(lineName, startStop, endStop){
-  for(const key in mta){ 
-    // Check which line it is
-    if(key === lineName){  
-      const currentLine = mta[key];  // Get the line array
-      const startIndex = currentLine.indexOf(startStop);  // Start stop index in array
-      const endIndex = currentLine.indexOf(endStop);  // End stop index in array
-      let lineStops;
-      // If it is forward or backward
-      if(startIndex < endIndex){  
-        lineStops = currentLine.slice(startIndex + 1, endIndex + 1);  // Get travel stops array
-      } else {
-        // Get travel stops array
-        lineStops = currentLine.slice(endIndex, startIndex); 
-        // Reverse travel stops array as it is travelling backwards
-        lineStops = lineStops.reverse();  
-      }
-      return lineStops;  // Return the stops array
-    }
+  const currentLine = mta[lineName]; // Get the line array  *Cannot do this for object?*
+  const startIndex = currentLine.indexOf(startStop);  // Start stop index in array
+  const endIndex = currentLine.indexOf(endStop);  // End stop index in array
+  let lineStops; // An array to store all the travelling stops
+  // Check if it is forward or backward
+  if(startIndex < endIndex){  
+    // Get travel stops array
+    lineStops = currentLine.slice(startIndex + 1, endIndex + 1);  
+  } else {
+    // Get travel stops array
+    lineStops = currentLine.slice(endIndex, startIndex); 
+    // Reverse travel stops array as it is travelling backwards
+    lineStops = lineStops.reverse();  
   }
+  return lineStops;  // Return the stops array
 }; // Single line function
 
 
 // planTrip
 const planTrip = function(lineName1, startStop, lineName2, endStop){
-  if(lineName1 === lineName2){ // Travel on the same line
+  if(lineName1 === lineName2){ // Travelling on the same line
     const trip = singleTrip(lineName1, startStop, endStop);
       // Convert array to string and print out
       console.log(`You must travel through the following stops on the ${lineName1} line: ${trip.join(", ")}.`); 

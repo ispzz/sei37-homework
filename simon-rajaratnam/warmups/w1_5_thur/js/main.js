@@ -14,19 +14,20 @@
 //   - In raindrop-speak, this would be a "PlingPlang".
 // - 34 has neither 3, 5 nor 7 as a factor.
 //   - Raindrop-speak doesn't know what to make of that, so it just goes with the straightforward "34".
-const factorChecker = function(num) {
-  let raindropSpeaker = "";
-  if(num % 3 === 0) {
-    raindropSpeaker += "Pling";
+
+const rainSound = [];
+
+const raindrops = function ( inputNumber ) {
+  if (Number.isInteger(inputNumber/3)) {
+    rainSound.push('Pling');
   }
-  if(num % 5 === 0) {
-    raindropSpeaker += "Plang";
+  if (Number.isInteger(inputNumber/5)) {
+    rainSound.push('Plang');
   }
-  if(num % 7 === 0) {
-    raindropSpeaker += "Plong";
+  if (Number.isInteger(inputNumber/7)) {
+    rainSound.push('Plong');
   }
-  if(num % 3 !== 0 && num % 5 !== 0 && num % 7 !== 0) {
-    raindropSpeaker = num.toString();
-  }
-  console.log(raindropSpeaker);
-};
+  console.log(`${rainSound.join('')}`);
+  rainSound.length = 0;
+    
+}
