@@ -1,0 +1,45 @@
+body {
+  background-color: lightblue;
+  margin: 20px auto;
+
+}
+
+h1 {
+  color: navy;
+  font-size: 45px;
+  text-align: center;
+}
+form {
+  width: 25%;
+  position: relative;
+  left: 37.5%;
+  margin: 20px 10px;
+  line-height: 26px;
+}
+
+.dropdowns {
+  position: absolute;
+  right: 0px;
+  width: 120px;
+}
+
+.inputs {
+  position: absolute;
+  left: 0px;
+  text-align: right;
+}
+
+#submitButton {
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
+
+.paragraphs {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+  border: 3px solid black;
+}
