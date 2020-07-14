@@ -1,0 +1,32 @@
+
+
+body {
+  background-color: hotpink;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  border: 1px solid white;
+  transform: scale(1.0) rotate(0deg);
+  transition: 2s; /* animation! */
+}
+
+img:hover {
+  transform: scale(3.0) rotate(360deg);
+}
+
+.special {
+  background-color: darkgoldenrod;
+}
+
+p a {
+  text-decoration: nonl /* turn off underlining*/
+}
+
+#bestDog {
+  background-color: red;
+}
+
+#narrow {
+  width: 100px;
+}

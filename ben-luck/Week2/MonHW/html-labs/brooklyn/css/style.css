@@ -1,0 +1,40 @@
+body {
+   font-size: 12px;
+   font-family: "Times New Roman", sans-serif;
+   line-height: 17px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-right: 350px;
+   margin-left: 100px;
+
+}
+
+h1 {
+  color: #656565a3;
+}
+
+h2, h3, a {
+  color: #656565ed;
+}
+
+p {
+  color: #656565c2;
+}
+
+a:hover  {
+  text-decoration: none;
+  color: #20222a;
+}
+
+#logo {
+  border: 5px solid white;
+  border-style: solid;
+  border-color: #0000002e;
+  padding: 1px;
+}
+
+
+
+#blueyblue {
+  color: #0070ff8f;
+}
