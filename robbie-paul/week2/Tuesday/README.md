@@ -1,2 +1,0 @@
-# Helen-grzyb-associates
-
