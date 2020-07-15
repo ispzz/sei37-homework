@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background: url("../images/bg_body.jpg");
+}
+
+/* Navigation ----------------------------------------------- */
+
+nav {
+  background-color: #070707;
+  height: 70px;
+}
+
+.nav-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.nav-wrapper a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 70px;
+  padding: 27px 15px;
+  color: white;
+}
+
+.nav-wrapper a:hover {
+  background-image: url("../images/bg_nav_rollover.png");
+}
+
+/* Header ----------------------------------------------- */
+.header {
+  height: 335px;
+  padding-top: 30px;
+  background: url("../images/bg_wrapper.png");
+  border-bottom: 1px solid white;
+  margin-bottom: 80px;
+}
+
+.header-top {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+.social {
+  float: right;
+  margin-bottom: 20px;
+}
+
+/* .social-icons li {
+  padding: 0 10px;
+} */
+
+.social-icons a {
+  width: 47px;
+  height: 48px;
+  float: left;
+  margin-left: 10px;
+}
+
+#icon-linkedin:hover {
+  background: url("../images/socialNav.png") -9px -7px;
+}
+#icon-twitter:hover {
+  background: url("../images/socialNav.png") -68px -7px;
+}
+#icon-facebook:hover {
+  background: url("../images/socialNav.png") -127px -7px;
+}
+#icon-rss:hover {
+  background: url("../images/socialNav.png") -184px -7px;
+}
+
+#icon-linkedin {
+  background: url("../images/socialNav.png") -9px -67px;
+}
+#icon-twitter {
+  background: url("../images/socialNav.png") -68px -67px;
+}
+#icon-facebook {
+  background: url("../images/socialNav.png") -127px -67px;
+}
+#icon-rss {
+  background: url("../images/socialNav.png") -184px -67px;
+}
+
+/* Banner ----------------------------------------------- */
+.banner {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 800px;
+}
+
+/* Blurb ----------------------------------------------- */
+.blurb {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #bdbdbd; 
+  padding: 20px 0px 20px 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.blurb .blurb-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 73%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blurb .blurb-button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  padding-right: 0px;
+}
+
+/* Home-box ----------------------------------------------- */
+.flex-container {
+  width: 800px;
+  margin: 0 auto 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 240px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flex-item .box-image {
+  background-color: #bdbdbd;
+  width: 240px;
+  height: 96px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+
+.flex-item .box-image img {
+  width: 230px;
+  height: 86px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.link {
+  margin: 15px 0px;
+  color: #36a1e7;
+}
+
+/* Footer ----------------------------------------------- */
+.footer {
+  background-color: #000000;
+  height: 370px;
+}
+
+.footer-box {
+  width: 800px;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
+  padding: 50px 0 16px 0;
+}
+
+h2 {
+  font-style: 20px;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.footer li {
+  display: list-item;
+}
+
+.footer a {
+  color: #515151;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.footer p {
+  color: #515151;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer .blogroll {
+  display: inline-block;
+  vertical-align: top;
+  width: 175px;
+}
+
+.footer .text-widget {
+  display: inline-block;
+  vertical-align: top;
+  width: 420px;
+  margin: 0 30px;
+}
+
+.footer .meta-widget  {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+.footer hr.solid {
+  border-top: 1px solid #1a1a1a;
+}
+
+.footer-bottom {
+  width: 800px;
+  margin: 0 auto 20px;
+  font-size: 14px;
+}
+
+.footer-bottom-left {
+  float: left;
+}
+
+.footer-bottom-right {
+  float: right;
+}
+
+.footer-bottom-right span {
+  color: #36a1e7; 
+}
