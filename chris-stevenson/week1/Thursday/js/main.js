@@ -60,8 +60,8 @@ console.log('');
 console.log('Part 2, Triangle');
 
 const triangle = {
-  sideA: 16,
-  sideB: 15,
+  sideA: 10,
+  sideB: 10,
   sideC: 10
 };
 
@@ -75,6 +75,7 @@ const triangleCheck = {
       }
     }
   },
+
   isIsosceles: function(side1, side2, side3) {
     if(triangleCheck.validTriangle(side1, side2, side3)) {
       if(side1 === side2 || side1 === side3 || side2 === side3){
@@ -84,6 +85,7 @@ const triangleCheck = {
       }
     }
   },
+
   area: function(side1, side2, side3) {
     if(triangleCheck.validTriangle(side1, side2, side3)) {
         halfPerimiter = (side1 + side2 + side3)/2;
@@ -103,6 +105,7 @@ const triangleCheck = {
       }
     }
   },
+
   validTriangle: function(side1, side2, side3) {
     let longSide = Math.max(side1, side2, side3);
     if(longSide >= (side1 + side2 + side3 - longSide)) {
@@ -113,6 +116,7 @@ const triangleCheck = {
   }
 }
 }
+
 
 console.log(triangleCheck.isEquilateral(triangle.sideA ,triangle.sideB, triangle.sideC));
 console.log(triangleCheck.isIsosceles(triangle.sideA ,triangle.sideB, triangle.sideC));
