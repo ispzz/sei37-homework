@@ -1,0 +1,76 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navbar */
+
+.navbar-dark {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(204,41,90,1) 0%, rgba(187,45,111,1) 0%, rgba(250,37,37,1) 0%, rgba(251,126,57,1) 58%, rgba(252,176,69,1) 100%);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-family: Raleway, sans-serif;
+}
+
+/* Landing cards */
+
+.green-top {
+  border: none;
+  border-top: 4px solid rgb(131,58,180);
+  );
+  padding: 10px;
+  background-color: white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.date {
+    font-size: 1em;
+    color: rgb(116, 192, 191);
+}
+
+/*Jumbotron */
+
+.jumbotron {
+  background-color: white;
+}
+
+.btn-primary {
+    background-color: black;
+}
+
+.btn-primary:hover {
+  background: rgb(131,58,180);
+    border: rgb(131,58,180);
+}
+
+/*Custom styles*/
+
+#news {
+    margin: 20px 0px 20px 0px;
+}
+
+footer {
+  font-size: 15px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(204,41,90,1) 0%, rgba(187,45,111,1) 0%, rgba(250,37,37,1) 0%, rgba(251,126,57,1) 58%, rgba(252,176,69,1) 100%);
+  padding: 10px;
+  color:white;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  opacity: 95%;
+}
