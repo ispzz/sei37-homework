@@ -1,0 +1,107 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  background: black;
+  overflow:hidden;
+}
+
+#walkingCat {
+  position: absolute;
+  top: 30%;
+  z-index: 5;
+}
+
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  width: 100%;
+  height: 100%;
+  grid-gap: 5px;
+  background: black;
+  transition-duration: 1s;
+  overflow:hidden;
+  background: white;
+  transition: background 1s linear;
+}
+
+.grid-item {
+
+}
+
+.explosionGif {
+  position: absolute;
+  z-index: 4;
+}
+
+button {
+  display: block;
+  position: relative;
+  top: 700px;
+  border: none;
+  background-color: skyblue;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.fadeout {
+  animation: fadeout 2s;
+}
+
+
+.sans {
+  animation: fadein 2s;
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 20%;
+  top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sansText {
+  animation: fadein 2s;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 3;
+  width: 400px;
+  height: 200px;
+  top: 200px;
+  left: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid white;
+}
+
+.rotate {
+  position: relative;
+  z-index: 10;
+  animation: rotate 0.5s infinite linear;
+}
