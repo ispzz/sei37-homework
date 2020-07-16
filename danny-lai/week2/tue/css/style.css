@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand&display=swap');
+
+body {
+  margin: 0px; /* get rid of the default margin */
+  background-color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topNav {
+  font-family: 'Poiret One', cursive;
+  background-color: #000000;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border: 1px solid white;
+}
+
+/* Style the links inside the navigation bar */
+.topNav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  /* padding-left: 14px; */
+  margin-top: 80px;
+  margin-left: 20%;
+}
+
+.introParagraph p {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  /* padding-left: 14px; */
+  font-size: 24px;
+  margin: 0 20% 0 20%;
+}
+
+.funFacts {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  margin: 0 20% 0 20%;
+}
+
+.funFacts strong {
+  font-size: 16px;
+  color: white;
+}
+
+.funFacts p {
+  font-size: 14px;
+  color: #c3c3c3;
+}
+
+.rubyConference {
+  margin-top: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.firstPic {
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.rubyConference {
+  margin-bottom: 10%;
+}
+
+.googleMap {
+  position: relative;
+  padding-bottom: 75%; /* 4:3 ratio*/
+  height: 0;
+  overflow: hidden;
+}
+
+.googleMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.rubyConference{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.rubyConference iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

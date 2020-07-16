@@ -1,0 +1,14 @@
+
+body {
+  background-image: url("../images/forest.jpg");
+  background-size: cover;
+}
+
+#godzilla {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
