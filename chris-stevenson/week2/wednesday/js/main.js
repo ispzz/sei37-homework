@@ -180,7 +180,7 @@ const unhideAndShow = function(element) {
 const goTurbo = function() {
   pixelsMoved = halfway / 30;
   let randomExplosionAnimation = setInterval(spawnRandomExplosion, 300);
-  let gridColorChangeAnimation = setInterval(changeGridColor, 10);
+  let gridColorChangeAnimation = setInterval(changeGridColor, 7);
   let myFlyingImagesBeUnleashed = setInterval(flyingImageFunction, 200);
 };
 
@@ -191,7 +191,8 @@ const flyingImageList = {
   '2': ['images/scream2.gif'],
   '3': ['images/scream3.gif'],
   '4': ['images/scream4.gif'],
-  '4': ['images/scream5.gif']
+  '5': ['images/scream5.gif'],
+  '6': ['images/scream6.gif']
 }
 
 
@@ -209,10 +210,10 @@ const halfwayHigh = Math.ceil(window.innerHeight/2);
 const flyingImageFunction = function() {
   const getRandomDisplaceX = Math.ceil(Math.random() * 2) + 2;
   const getRandomDisplaceY = Math.ceil(Math.random() * 2) + 2;
-  const getRandomX = Math.floor(Math.random() * window.innerWidth);
-  const getRandomY = Math.floor(Math.random() * window.innerHeight);
+  const getRandomX = Math.floor(Math.random() * window.innerWidth) - 300;
+  const getRandomY = Math.floor(Math.random() * window.innerHeight) - 300;
   const flyingImage = document.createElement('img');
-  const getRandomImage = Math.floor(Math.random() * 5) + 1;
+  const getRandomImage = Math.floor(Math.random() * 6) + 1;
   flyingImage.src = flyingImageList[getRandomImage];
   flyingImage.style.display = 'inline';
   flyingImage.classList.add('rotate');
