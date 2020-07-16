@@ -1,0 +1,75 @@
+h2 {
+	margin: 0 ;
+font-family: "Raleway", sans-serif;
+background-color: #F15B31;
+color: #FFFFFF;
+padding: 30px 20px 30px 10px;
+letter-spacing: 1px;
+font-weight: 200;
+font-size: 25px;
+text-align: center;
+}
+
+div {
+	padding: 5px;
+	margin: 10px;
+}
+
+body {
+	margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+#rite {
+   text-align: center;
+   color: green;
+ }
+
+ #wrong {
+	 text-align: center;
+   color: red;
+ }
+
+.btn:hover {
+	background-color: #3e8e41;
+	color: white;
+}
+
+#rewards {
+	background-color: #3e8e41;
+
+}
+
+.btn {
+	padding: 5px;
+	margin: 10px;
+}
+
+.msg {
+	padding: 5px;
+	margin: 10px;
+}
+
+label {
+	color: green;
+}
+
+#ans1 {
+	color: #1F3CDA;
+}
+
+#ans2 {
+	color: #FFC300;
+}
+
+#ans3 {
+	color: #FF5733;
+}
+
+#ans4 {
+	color: #C70039;
+}
+
+span {
+	color: #900C3F;
+}

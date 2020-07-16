@@ -1,0 +1,90 @@
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+nav span {
+  position: relative;
+  left: 10%;
+  padding: 0 15px;
+  line-height: 80px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+#container {
+  padding-top: 90px;
+}
+
+/* Hover Items for social media */
+
+ul {
+  width: 100%;
+  right: -60%;
+  top: -20px;
+  position: absolute;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 0;
+  float: left;
+  right: 0;
+}
+
+li, a {
+  height: 60px;
+  display: block;
+}
+
+#linkedIn {
+  width: 60px;
+  background: url(../images/socialNav.png) 0 -60px;
+}
+
+#twitter {
+  width: 60px;
+  background: url(../images/socialNav.png) -60px -60px;
+}
+
+#facebook {
+  width: 60px;
+  background: url(../images/socialNav.png) -120px -60px;
+}
+
+#rSS {
+  right: 0px;
+  width: 60px;
+  background: url(../images/socialNav.png) -180px -60px;
+}
+
+#linkedIn a:hover {
+  background: url(../images/socialNav.png) 0 0;
+}
+
+#twitter a:hover {
+  background: url(../images/socialNav.png) -60px 0;
+}
+
+#facebook a:hover {
+  background: url(../images/socialNav.png) -120px 0;
+}
+
+#rSS a:hover {
+  background: url(../images/socialNav.png) -180px 0;
+}
