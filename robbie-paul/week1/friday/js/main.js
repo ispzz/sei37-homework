@@ -1,3 +1,26 @@
+// ZARA : HINT:
+// Hello!! Yeah MTA confused me so much too. 
+
+//So since you’ve already made a currentLine variable you don’t need to use network[line] on lines 68, 69 and 75. 
+
+//Also, you’ve just misspelt your arguments so it should be currentLine.indexOf( startStation ) . 
+
+//Your logic looks fine so you ask what line, start and stop station then you want to grab the indexOf those and with the index you want to .slice() 
+
+//- slice will return a portion of the array and that’s how you’d list out what stations they’ll go by and 
+
+//this where you’d use the indexOf start and stop. If you have other questions just ask 
+
+
+
+
+
+
+
+
+
+
+
 // MTA Lab
 // Objectives:
 // Apply your knowledge of Javascript to solve a real world problem.
