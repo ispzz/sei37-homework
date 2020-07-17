@@ -12,13 +12,17 @@
 <body class="works">
   <div class="content">
     <div class="left-sidebar">
-      <img class="logo" src="./assets/jenn-logo.png" alt="Jenn Schiffer Logo" width="200px">
+      <a href="./about.html"><img class="logo" src="./assets/jenn-logo.png" alt="Jenn Schiffer Logo" width="200px"></a>
       <ul class="sidebar">
-        <li><a href="#">&ltabout jenn&gt</a></li>
-        <li><a href="#">&ltjenn's work&gt</a></li>
-        <li><a href="#">&ltcontact jenn&gt</a></li>
+        <li onclick="location.href='./about.html';" style="cursor: pointer;"><a>&ltabout jenn&gt</a></li>
+        <li onclick="location.href='./works.html';" style="cursor: pointer;"><a>&ltjenn's work&gt</a></li>
+        <li onclick="location.href='./contact.html';" style="cursor: pointer;"><a>&ltcontact jenn&gt</a></li>
       </ul>
-      <p class="small">Copyright &copy 2020.</p>
+      <div class="copyRight">
+        <a href="./index.html">
+          <p class="small">Copyright &copy 2020.</p>
+        </a>
+      </div>
     </div><div class="right-content">
       <h1>&ltjenn’s works&gt</h1>
       <div class="works-list flex-container">
@@ -33,11 +37,11 @@
       </div>
       <div class="works-list flex-container">
         <div class="works-item flex-item-work">
-          <div class="works-item-image exremely-online"><h3>&ltExremely online&gt</h3></div>
+          <div class="works-item-image extremely-online"><h3>&ltExtremely online&gt</h3></div>
           <p>Baby i was born 2 blog.</p>
         </div>
         <div class="works-item flex-item-work">
-          <div class="works-item-image css-preverts"><h3>&ltcss preverts&gt</h3></div>
+          <div class="works-item-image css-perverts"><h3>&ltcss perverts&gt</h3></div>
           <p>Satire about web development, best tutorials online</p>
         </div>
       </div>
@@ -53,12 +57,15 @@
       </div>
       <div class="works-list flex-container">
         <div class="works-item flex-item-work">
-          <div class="works-item-image dhtmlconf"><h3>&ltdhtmlconf&gt</h3></div>
+          <div class="works-item-image dhtmlconf">
+            <h3>&ltdhtmlconf&gt</h3>
+          </div>
           <p>A very important conference.</p>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
