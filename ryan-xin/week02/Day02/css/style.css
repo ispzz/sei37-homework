@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 h1 {
-  font-size: 50px;
+  font-size: 56px;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 74px;
 }
 h2 {
   font-size: 34px;
@@ -31,6 +31,59 @@ p.small {
   line-height: 18px;
 }
 
+
+h1::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h2::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h3::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h4::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+p::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+p.small::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+label::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+
+h1#sub-heading::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 SCROLL BAR                                 */
+/* -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 12px;
+  background:#f0f0f
+}
+
+::-webkit-scrollbar-track {
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background:#000058;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000058;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                 INDEX PAGE                                 */
@@ -64,6 +117,7 @@ h1#sub-heading {
   margin-bottom: 60px;
 }
 
+
 .scroll-down-icon, .scroll-down-text {
   display: inline-block;
   vertical-align: middle;
@@ -71,6 +125,7 @@ h1#sub-heading {
 
 .scroll-down-text {
   margin-left: 20px;
+  color: white;
 }
 
 .scroll-down-icon {
@@ -106,9 +161,14 @@ body.about, body.works, body.contact {
   /* overflow: hidden; */
 }
 
-.left-sidebar, .right-content {
+.left-sidebar {
   height: 100%;
-  padding: 40px 40px;
+  padding: 40px 0px;
+}
+
+.right-content {
+  height: 100%;
+  padding: 40px;
 }
 
 .left-sidebar {
@@ -129,7 +189,7 @@ body.about, body.works, body.contact {
 /* ------------------------------ LEFT SIDEBAR ------------------------------ */
 
 .logo {
-  margin-bottom: 40px;
+  margin: 40px 60px 40px 60px;
 }
 
 .left-sidebar a {
@@ -137,12 +197,15 @@ body.about, body.works, body.contact {
   font-weight: bold;
   line-height: 70px;
   color: white;
-  height: 70px;
 }
 
 .left-sidebar li {
+  padding: 0 60px;
   height: 70px;
-  width: 100%;
+}
+
+.left-sidebar li:hover {
+  background-color: #f40157;
 }
 
 .left-sidebar {
@@ -153,6 +216,14 @@ body.about, body.works, body.contact {
   color: #7676cf;
   position: absolute;
   bottom: 40px;
+}
+
+.copyRight {
+  padding-left: 60px;
+}
+
+.copyRight:hover p {
+  color: #f40157;
 }
 
 /* ------------------------------ RIGHT CONTENT ----------------------------- */
@@ -184,27 +255,18 @@ body.about, body.works, body.contact {
 
 .flex-item-intro {
   width: 60%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .flex-item-photo {
-  width: 35%;
-  margin-top: 30px;
-}
-
-/* .intro { 
-  display: inline-block;
-  width: 56%;
   vertical-align: top;
-  margin-right: 20px;
+  width: 35%;
+  margin-top: 0px;
 }
 
 .jenn-photo {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
-  margin-right: 0;
-} */
+  max-width:100%
+}
 
 /* ------------------------------- EXPERIENCE ------------------------------- */
 
@@ -269,10 +331,10 @@ body.about, body.works, body.contact {
 
 .flex-item-work {
   width: 48%;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.works-item-image {
+.works-item-image h3 {
   height: 200px;
   line-height: 200px;
   color: #000058;
@@ -286,10 +348,10 @@ body.about, body.works, body.contact {
 .electronic-mail {
   background-color: #7821ff;
 }
-.exremely-online {
+.extremely-online {
   background-color: #ff7f00;
 }
-.css-preverts {
+.css-perverts {
   background-color: #abff02;
 }
 .jerseyscript {
@@ -300,6 +362,63 @@ body.about, body.works, body.contact {
 }
 .dhtmlconf {
   background-color: #fbf323;
+}
+
+.pxon:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.pxon:hover h3 {
+  color: #fc0d87;
+}
+
+
+.electronic-mail:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.electronic-mail:hover h3 {
+  color: #7821ff;
+}
+
+.extremely-online:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.extremely-online:hover h3 {
+  color: #ff7f00;
+}
+
+.css-perverts:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.css-perverts:hover h3 {
+  color: #abff02;
+}
+
+.jerseyscript:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.jerseyscript:hover h3 {
+  color: #23d7fb;
+}
+
+.brookly-js:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.brookly-js:hover{
+  color: #7821ff;
+}
+
+.dhtmlconf:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.dhtmlconf:hover h3 {
+  color: #fbf323;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -331,7 +450,7 @@ input[type=text] {
   padding: 10px 20px;
   margin: 10px 0 20px;
   box-sizing: border-box;
-  border: 2px sold white;
+  border: 2px solid #000058;
   background-color: #f0f0f4;
   color: #f40157;
 }
@@ -346,18 +465,18 @@ textarea {
   padding: 10px 20px;
   box-sizing: border-box;
   background-color: #f0f0f4;
-  border: 2px sold white;
+  border: 2px solid #000058;
   resize: none;
   margin: 10px 0 20px;
+  color: #f40157;
 }
 
 textarea:focus {
   border: 2px solid #f40157;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
+button {
+  width: 100%;
   background-color: #f40157;
   border: none;
   color: white;
@@ -365,8 +484,9 @@ input[type=reset] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-input[type=button]:hover {
+button:hover {
   background-color: #000058;
 }
