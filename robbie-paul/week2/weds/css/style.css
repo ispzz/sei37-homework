@@ -1,4 +1,4 @@
 .catDom {
     position: absolute;
-    right: 0px;              /* you're staying that position should start at 0px on left.s */
+    left: 0px;              /* you're staying that position should start at 0px on left.s */
 }

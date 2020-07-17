@@ -9,16 +9,16 @@ const loop = function () {
 }
 
 function walkStep() {
-  const currentRight = catDom.style.right;
+  const currentLeft = catDom.style.left;
   console.log()
   
-  let newRight;
-  if (currentRight) {
-    newRight = 0;
+  let newLeft;
+  if (isNaN?currentLeft) {
+    newLeft = 0;
   } else {
-    newRight = currentRight + 10;
+    newLeft = currentLeft + 10;
   }
-  catDom.style.right = `${newRight}px`;
+  catDom.style.left = `${newLeft}px`;
 }
 
 
