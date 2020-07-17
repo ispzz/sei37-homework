@@ -12,13 +12,17 @@
 <body class="contact">
   <div class="content">
     <div class="left-sidebar">
-      <img class="logo" src="./assets/jenn-logo.png" alt="Jenn Schiffer Logo" width="200px">
+      <a href="./about.html"><img class="logo" src="./assets/jenn-logo.png" alt="Jenn Schiffer Logo" width="200px"></a>
       <ul class="sidebar">
-        <li><a href="#">&ltabout jenn&gt</a></li>
-        <li><a href="#">&ltjenn's work&gt</a></li>
-        <li><a href="#">&ltcontact jenn&gt</a></li>
+        <li onclick="location.href='./about.html';" style="cursor: pointer;"><a>&ltabout jenn&gt</a></li>
+        <li onclick="location.href='./works.html';" style="cursor: pointer;"><a>&ltjenn's work&gt</a></li>
+        <li onclick="location.href='./contact.html';" style="cursor: pointer;"><a>&ltcontact jenn&gt</a></li>
       </ul>
-      <p class="small">Copyright &copy 2020.</p>
+      <div class="copyRight">
+        <a href="./index.html">
+          <p class="small">Copyright &copy 2020.</p>
+        </a>
+      </div>
     </div><div class="right-content">
       <h1>&ltcontact jenn&gt</h1>
         <div class="contact-container">
@@ -31,7 +35,7 @@
             <input type="text" id="email" name="email"><br>
             <label for="message">your message</label><br>
             <textarea name="message"></textarea>
-            <input type="button" value="contact her">
+            <button>contact her</button>
           </fieldset>
         </div>
       </div>
