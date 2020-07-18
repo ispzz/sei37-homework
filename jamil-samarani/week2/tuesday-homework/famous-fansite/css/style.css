@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+
+/* Remove margin / padding from around content. Normally 8px */
+
+
+html{
+  background-color: rgb(240, 194, 122);
+}
+
+body{
+  margin:20px;
+  padding-top: 20px;
+  padding:20px;
+  background-color: rgb(194, 194, 194);
+  box-sizing: border-box;
+}
+
+body.Container {
+  float: left;
+}
+
+body.Container.leftColumn {
+  width: 30%
+}
+body.Container.rightColumn {
+  width:60%;
+}
+
+.videoBar {
+
+}
+
+
+
+/* Add a black background color to the top navigation */
+.nav-wrapper {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nav-bar {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Style the links inside the navigation bar */
+
+
+.heading {
+  text-align:center;
+
+}
+
+/* Change the color of links on hover */
+.nav-bar a:hover {
+  background-color: #a0e0f5;
+  background: linear-gradient(to bottom, #577e8b 0%, #000000 15%);
+  color: lightblue;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4ae350;
+  color: white;
+}
