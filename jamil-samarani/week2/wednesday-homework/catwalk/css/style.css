@@ -1,0 +1,9 @@
+
+
+/* Remove margin / padding from around content. Normally 8px */
+
+body,html {
+  margin:0;
+  padding:0;
+  background-color: grey;
+}
