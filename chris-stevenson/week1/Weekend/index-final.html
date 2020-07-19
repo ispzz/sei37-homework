@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weekend Homework</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Train Directions</h1>
+    <div id="Selection Lists">
+    <form>
+      <div id='Starting Location' style='display:block'>
+        <!-- Starting Line -->
+        <label for="startingLine" class='inputs'>Your starting line:</label>
+        <select id="startingLine" onchange="populateList(this, 'startingStation', 'startingStationLabel')" class='dropdowns'>
+          <option hidden disabled selected value>Select</option>
+          <option value="N">N</option>
+          <option value="L">L</option>
+          <option value="6">6</option>
+        </select>
+        <br>
+        <!-- Starting Station -->
+        <label class='inputs' for="startingStation" id='startingStationLabel' style="display:none;">Your starting station:</label>
+        <select id="startingStation" style="display:none;" class='dropdowns'>
+          <option hidden disabled selected value>Select</option>
+        </select>
+      </div>
+      <br>
+      <div id='Ending Location' style='display:block'>
+        <!-- Ending Line -->
+        <label class='inputs' for="endingLine" id='endingLineLabel'>Your destination line:</label>
+        <select id="endingLine" onchange="populateList(this, 'endingStation', 'endingStationLabel')" class='dropdowns'>
+          <option hidden disabled selected value>Select</option>
+          <option value="N">N</option>
+          <option value="L">L</option>
+          <option value="6">6</option>
+        </select>
+        <br>
+        <!-- Ending Station -->
+        <label class='inputs' for="endingStation" id='endingStationLabel' style="display:none;">Your destination station:</label>
+        <select id="endingStation" style="display:none;" class='dropdowns'>
+          <option hidden disabled selected value>Select</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <button type="button" id='submitButton'>Give me directions!</button>
+    </form>
+  </div>
+  <br>
+  <br>
+  <div class='paragraphs'>
+    <h4>Train Lines:</h4>
+    <p>Line N: Times Square, 34th, 28th, 23rd, Union Square, 8th</p>
+    <p>Line L: 8th, 6th, Union Square, 3rd, 1st</p>
+    <p>Line 6: Grand Central, 33rd, 28th, 23rd, Union Square, Astor Place</p>
+  </div>
+  <br>
+  <br>
+    <div class='paragraphs' id='outPutDirections' style="display:none">
+    </div>
+  </body>
+    <script src="js/main-final.js"></script>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Open+Sans:wght@300&display=swap');
+/*
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* default style for document ----------------------------------- */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: url('../images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-align: center;
+}
+
+/* Nav bar ----------------------------------- */
+
+nav {
+  height: 90px;
+  background: url('../images/banner.jpg');
+  background-size: contain;
+  color: white;
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  bottom: 0;
+  margin: 0;
+  padding-right: 10px;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  line-height: 90px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#navBarPic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../images/sophie-cartoon.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 90px;
+  border-radius: 0 0 0 40px;
+}
+
+/* main body of the website ----------------------------- */
+
+/* main Page styling ------------------------------------- */
+
+.mainBody {
+  position: relative;
+  top: 120px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mainBody img, iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid white;
+}
+
+
+.maps {
+  margin-bottom: 100px;
+}
+
+article, h1, h2 {
+  background: rgba(255,255,255, 0.7);
+  padding: 20px;
+  margin: 30px;
+}
