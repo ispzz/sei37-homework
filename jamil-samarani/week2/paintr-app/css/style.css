@@ -1,0 +1,12 @@
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow: hidden; /* no scrollbars! */
+}
+
+div.blob {
+  position: absolute;
+  /*border: 1px solid red;  //just for debugging */
+  border-radius: 50%;
+}

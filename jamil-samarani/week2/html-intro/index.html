@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Intro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Welcome to My Special Site With All My Thoughts and Feelings On It</h1>
+
+  <h3 class="special">Sorry if this is not as exciting as JavaScript... </h3>
+
+  Here are all my <strong class="special">interesting</strong> thoughts and <em>opinions</em>.
+
+    <p id="narrow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+<!-- Whitespace is ignored by HTML! Only a single space is shown;
+  anything more gets squashed down to a single space -->
+  <p>Learning to code? Why not <a href="http://ga.co/">study at GA?</a>
+
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+  <br>  <!-- no closing tag! This is only a "self closing " break. Skips one line and moves to the next.-->
+    <a href="gallery.html">Visit my gallery</a>
+
+    <img src="http://www.fillmurray.com/600/500" alt="Bill Murray">
+
+  <p> More thoughts and opinions.</p>
+
+  <hr><!--- a kind of separator-->
+
+  <blockquote>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <br>
+    Brandname &copy; <!-- HTML entity -->
+  </blockquote>
+
+
+<pre> This tag allows you to maintain your style of text.
+  You can skip to new lines.                      And add extra spaces.</pre>
+
+  <p>
+  Here is some code: <code>const x = 5;</code>
+  </p>
+
+  <table>
+    <thead>
+      <td>Brother</td>
+      <td>Instrument</td>
+
+      <thead>
+        <tr>
+          <td>Groucho</td>
+          <td>Guitar</td>
+  </table>
+
+  <h2>Here comes a form!</h2>
+
+  <form><!-- the container for grouping together all the form components -->
+
+    <input type="text" name="textExample"
+    placeholder="John Doe" value=''>
+    <br>
+    <input type="text" name="textExample"
+    placeholder="" value="John Doe">
+    <br>
+    <input type="password" name="seekrit">
+    <br>
+    <textarea name="emailBody">
+Pre-populated data goes here.
+
+Another Paragraph.
+
+    </textarea>
+
+      <br>
+      <select name="dog">
+        <option selected disabled value="0">Please select one of the following options: </option>
+        <option value="45">Toller</option>
+        <option disabled="100">Husky</option>
+        <option value="50">Pug</option>
+      </select>
+
+      <br>
+
+  <fieldset>
+
+      <legend>Please select the preferred dog traits:</legend>
+        <label>
+          <input type="checkbox" name="traits"
+            value="boundy"> Lots of bounding around
+        </label>
+
+      <br>
+        <input type="checkbox" name="traits"
+          value="drool" id="drooling">
+          <label for="drooling">Prodigious slobbering</
+          label>
+
+      <br>
+        <input type="checkbox" name="traits"
+          value="drool"> Prodigious slobbering
+
+    </fieldset>
+
+
+    <fieldset>
+
+      <legend>Select only one brother:</legend>
+
+      <input type="radio" name="bro" id="groucho"
+      value="Groucho">
+      <label for="groucho">Groucho</label>
+
+      <br>
+
+      <input type="radio" name="bro" id="harpo"
+      value="Harpo">
+      <label for="harpo">Harpo</label>
+
+    </fieldset>
+
+      <br>
+
+    <input type="submit" value="Send form">
+
+    <button>This is the label.</button>
+
+      <br>
+
+    </form>
+
+
+  <p><em>My Favourite Dogs:</em>
+    </p>
+
+    <ul class="special">
+      <li id="bestDog">Ruby</li>
+      <li>Jess</li>
+      <li>Nookie</li>
+
+    </ul>
+
+    <!-- inline element -->
+    <span>Hello.</span>
+    <span>Hello again.</span>
+
+    <!-- block element: takes its own row -->
+    <div>This will get its own line.</div>
+    <div>So will this, <div>and this.</div> </div>
+
+</body>
+
+
+</html>
