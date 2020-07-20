@@ -4,13 +4,11 @@ body {
   
   #words {
     display: none;
-    /* visibility: hidden; */
   }
   
   .word {
-    font-family: Georgia, serif;
-    font-size: 60pt;
+    font-size: 10pt;
     color: white;
     position: absolute;
-    display: none;
+    /* display: none; */
   }
