@@ -1,0 +1,41 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+#container {
+/*  margin-align: auto; */
+  align-items: center;
+  left: 10%;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  font-size:  12px;
+  line-height: 17px;
+  color: #656565;
+}
+
+h1 {
+  color: #lightgrey;
+}
+
+
+.footImages {
+  border: 3px solid lightgrey;
+  border-style: solid white;
+  border-color: */
+  padding: 100px solid black;
+
+  note.. Lookup div width set.. Use to keep everything within the div width.
+
+
+}

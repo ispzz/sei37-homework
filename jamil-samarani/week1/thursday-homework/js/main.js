@@ -1,4 +1,4 @@
-console.log('Hello World!');
+console.log('Thursday homework: geometry, cash, bank');
 // Geometry Function Lab
 // Part 1, Rectangle
 // Given a rectangle object like the one below, write the following functions:
@@ -13,23 +13,33 @@ console.log('Hello World!');
 // In other words, these functions should take as their only argument a single object with the same keys (length, width) as the rectangle object above, and use that object to make the calculations.
 //
 
-console.log( "Rectangle" );
 
-function isSquare(length, width)
-  if (length === width) {
-    return "True";
-  }else {
-  return "False"
-}
 
-function area(length, width){
-  return length * width
-}
 
-function perimeter(length, width){
-  return length * 2 + width * 2
 
-}
+//console.log( "Geometry:" );
+
+// const rectangle = {
+//   length: 4,
+//   width: 4
+// };
+//
+// const isSquare = function(rect){
+  /////////console.log(rect.length, rect.width)
+//////  // if( rect.width === rect.length ){
+//////  //   return true;
+  ////////// } else {
+  //////////   return false;
+/////////  // }
+//   return rect.width === rect.length;
+// };
+//
+// const result = isSquare( rectangle );
+// console.log(`Is the rectangle square? ${ result }`);
+
+////////////isSquare ({length:7 , width:3}) - to call function in console
+
+
 
 
 // Part 2, Triangle
@@ -67,6 +77,36 @@ function perimeter(length, width){
 // // Output
 // cashRegister(cartForParty); // 60.55
 
+// Input
+
+// const cartForParty = {
+//   banana: "1.25",
+//   handkerchief: ".99",
+//   Tshirt: "25.01",
+//   apple: "0.60",
+//   nalgene: "10.34",
+//   proteinShake: "22.36"
+// };
+//
+// const cashRegister = function( cart ){
+//   let runningTotal = 0
+//
+//   /////////////////for..in
+//   for( const key in cart ){
+//     console.log( cart[key] );
+//////////////////// runningTotal = runningTotal + parseFloat( cart[key] );
+//     runningTotal += runningTotal + parseFloat(cart[key]);
+//
+//   }// for
+//
+//     console.log(runningTotal); // Print out the final running total
+//
+// }; ////////////// Cash Register
+//
+// ///////////////////Output
+// cashRegister(cartForParty);
+
+
 
 
 
@@ -81,30 +121,92 @@ function perimeter(length, width){
 //
 // The bank has many accounts. Accounts should be objects that all share a set of common functionality.
 //
+// Accounts
+// Accounts have a current balance and owner's name. You should be able to deposit or withdraw from an account to change the balance.
+//
+// There is no need to write a user interface. Make sure functions return values -- you may also have your functions console.log() values to help you see your code working.
+//
+// You should write a basic story through a series of JavaScript commands that shows that the methods do indeed work as expected: add some accounts, show the total balance, make some deposits and withdrawals, show the new total balance.
+//
+// Tips
+// Don't overthink this. Shorter code is probably the answer.
 
-const accounts = [
-  {name: "Jamil", accountNum: "0001", currentBal: "1500"},
-  {name: "Luke", accountNum: "0002", currentBal: "2000"},
-  {name: "Nemo", accountNum: "0003", currentBal: "25"}
-];
-const account = function(name, currentBal){
+console.log('GA Bank!');
 
-  accounts.name = name;
-  accounts.balance = currentBal;
 
-  accounts.deposit = function (depositAmount) {
-    newBalance = accounts.balance - depositAmount;
-    console.log("Your account balance is now " + newBalance);
+const bank = {
 
-  };
+  accounts: [
+    {name: 'Zara', balance: -253},
+    {name: 'Jamil', balance: 3500},
+    {name: 'Nemo', balance: 18974},
+    {name: 'Luke', balance: 39652},
+  ],
 
-  account.withdraw = function (withdrawAmount){
-    newBalance = accounts.balance - withdrawAmount;
-    console.log("Your account balance is now " + newBalance);
+  deposit: function(accountName, amount ){
+    console.log(`in bank.deposit(${ accountName }, ${amount})`);
 
+    let foundAccount = false;
+    //1. Find the account by name, i.e. loop through the this.accounts array
+    // and check if any of the account object have the .name === accountName
+    for( let i = 0; i < this.accounts.length; i++ ){
+      const currentAccount = this.accounts[ i ];
+      if( currentAccount.name === accountName ){
+          // Found the account we want to deposit into!
+          console.log('Found the account!', currentAccount);
+
+          currentAccount.balance += amount;
+          foundAccount = true;
+          break;// Stop searching once match is Found
+      }//if
+
+    } //For
+
+    if( foundAccount === false ){
+      console.log(`no such account: ${accountName}`);
     }
+  } //deposit
 
-  };
+}; // bank
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const accounts = [
+//   {name: "Jamil", accountNum: "0001", currentBal: "1500"},
+//   {name: "Luke", accountNum: "0002", currentBal: "2000"},
+//   {name: "Nemo", accountNum: "0003", currentBal: "25"}
+// ];
+// const account = function(name, currentBal){
+//
+//   accounts.name = name;
+//   accounts.balance = currentBal;
+//
+//   accounts.deposit = function (depositAmount) {
+//     newBalance = accounts.balance - depositAmount;
+//     console.log("Your account balance is now " + newBalance);
+//
+//   };
+//
+//   account.withdraw = function (withdrawAmount){
+//     newBalance = accounts.balance - withdrawAmount;
+//     console.log("Your account balance is now " + newBalance);
+//
+//     }
+//
+//   };
 
 // Accounts
 // Accounts have a current balance and owner's name. You should be able to deposit or withdraw from an account to change the balance.

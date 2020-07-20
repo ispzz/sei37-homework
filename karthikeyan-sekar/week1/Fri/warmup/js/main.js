@@ -20,7 +20,7 @@ const splitSent = (sent) => {
 const serge = (words) => {
   let ans;
   for (let i = 0; i < arr.length; i++) {
-    if (words[i] === 'you')
+    if (words[i] === '?')
     {
    ans = "Sure";
   }
@@ -39,4 +39,5 @@ let ans = 'Whatever.';
 
 }
 
-splitSent("HEY");
+//splitSent("HEY");
+splitSent("?");
