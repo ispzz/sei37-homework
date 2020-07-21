@@ -1,0 +1,92 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital@1&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital@1&display=swap');
+
+body {
+  margin: 10px;
+
+  background-color: #090909;
+  /*font-family: 'Courgette', cursive;*/
+
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.bio {
+    display: inline-block;
+    width: 500px;
+    height: 800px;
+    overflow: scroll;
+    color: white;
+    /*border: 1px solid green;*/
+}
+
+.gradientTop {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   /*border: 1px solid green;*/
+}
+
+.gradientBottom {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   /*border: 1px solid green;*/
+}
+
+.bio h1 {
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-size: 40px;
+}
+
+.bio h5 {
+    text-align: center;
+    position: relative;
+    top: 250px;
+    font-size: 16px;
+}
+
+.bio p {
+  position: relative;
+  top: 600px;
+}
+
+.staticImage {
+    display: inline-block;
+    width: 500px;
+    /*border: 1px solid green;*/
+}
+
+.theLinks {
+    position: absolute;
+    font-size: 30px;
+}
+
+#trivia {
+    top: 50%;
+    left: 60%;
+  /*background-color: white;*/
+}
+/*
+.trivia {
+  top: 50%;
+  left: 50%;
+}
+*/
+#homeown {
+  top: 50%;
+  left: 80%;
+}
+
+.staticImage:hover  {
+  opacity: 0.3;
+}
+
+#trivia:hover {
+  opacity: 0.;
+}
