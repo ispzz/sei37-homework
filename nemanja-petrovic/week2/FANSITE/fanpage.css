@@ -1,0 +1,92 @@
+
+header{
+  font-family:'Libre Barcode 39 Extended Text', cursive;
+  font-size: 80px;
+  color: black;
+  padding-left: 11.2rem;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-color: #cccccc;
+}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:0.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+code,kbd,pre,samp{font-family:'Roboto', sans-serif;font-size:1em}
+pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+
+
+img{border:0}
+
+svg:not(:root){overflow:hidden}
+
+figure{margin:0}
+
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+
+legend{border:0;padding:0}
+
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+
+@media (min-width: 20rem){html{font-size:20px}}
+
+body{
+  margin:2rem 0 5rem;
+  color:grey;
+  background-color:white;
+}
+@media (min-width: 20rem){body{margin-top:5rem}
+a{color:rgba(0,0,0,0.5);text-decoration:none}
+a:hover,a:focus{color:darkcyan}
+h1,h2,h3,h4,h5,h6{font-family:'Spartan', sans-serif;
+margin:0 0 0.5rem -0.1rem;
+line-height:1;
+color:black;
+text-rendering:optimizeLegibility}
+
+h1{font-size:1.5rem;margin-bottom:1rem}
+
+@media (min-width: 30rem){h1{font-size:2.3rem;margin-bottom:1.5rem}}
+
+h1 a{color:inherit}
+h2{margin-top:2rem;font-size:1.25rem;margin-bottom:0.75rem}
+
+@media (min-width: 30rem){h2{margin-top:2.5rem;font-size:1.5rem;margin-bottom:1rem}}
+
+h3,h4,h5,h6{margin-top:2.0rem;font-size:1rem}
+
+p,ul,ol,dl,table,pre{margin-top:0;font-family: 'Roboto', sans-serif;}
+
+ul,ol{padding-left:1.5rem;padding-bottom:.5rem;list-style:none}
+
+li{padding-bottom:1.0rem}
+
+dd{margin-left:1.5rem}
+
+hr{border:none;margin:2.5rem 0;border-bottom:1px solid #ccc;position:relative;top:-1px}
+
+.soc{list-style:none;padding-top:3rem;margin:0;text-align:center}
+.soc li{display:inline-block}
+.soc a,.soc svg{display:block}
+.soc a{position:relative;height:36px;height:3.6rem;width:36px;width:3.6rem}
+.soc a:hover,.soc a:focus{fill:darkcyan}
+.soc svg{height:100%;width:100%}
+
+.container img,.container iframe{max-width:100%}
+.container img{margin:0 auto;display:block}
+
+table{width:100%;border:1px solid #ccc;border-collapse:collapse}
+td,th{padding:.25rem .5rem;border:1px solid #333}
+pre,code{font-family:inherit;background-color:#333}
+pre{padding:.5rem 1rem;font-size:0.8rem}
+code{padding:.1rem .25rem}
+
+.container{max-width:30rem;margin:0 auto;padding:0 1rem}
