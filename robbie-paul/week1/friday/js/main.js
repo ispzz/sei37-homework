@@ -1,3 +1,4 @@
+
 // ZARA : HINT:
 // Hello!! Yeah MTA confused me so much too. 
 
@@ -10,6 +11,7 @@
 //- slice will return a portion of the array and that’s how you’d list out what stations they’ll go by and 
 
 //this where you’d use the indexOf start and stop. If you have other questions just ask 
+
 
 
 

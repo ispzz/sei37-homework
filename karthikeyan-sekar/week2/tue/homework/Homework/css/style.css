@@ -21,7 +21,6 @@ body {
   font-size: 16px;
   text-decoration:underline;
   border-color: pink;
-
 }
 .images {
   border-radius: 10%;
@@ -43,21 +42,14 @@ span{
   font-size:
 }
 nav a:hover {
-  background-color: #483434cf;
   color: #F5F5F5;
-  font-size: 15px;
-  border-radius: 0.5em;
-  box-shadow: 0px 15px 15px #222;
 }
 li a:hover {
   background-color: yellow;
   text-decoration:underline;
   border-color: pink;
 }
-h3 a:hover {
-  background-color: yellow;
-  text-decoration:underline;
-}
+
 
 h5{
   color: #000000;
@@ -69,7 +61,6 @@ nav {
   letter-spacing: 5px;
   font-size: 20px;
   text-transform: uppercase;
-  transform: matrix3d();
 }
 
 nav a {
@@ -136,8 +127,3 @@ aside {
 .tex {
   overflow: hidden;
 }
-
-/* img:hover {
-  width: 200px;
-  height: 200px;
-} */
