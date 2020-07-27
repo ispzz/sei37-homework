@@ -16,13 +16,13 @@ To get started, look at the examples on the package page linked to above (but no
 ### HINTS:
 - To make sure you have the up-to-date Text Soup warmup solution in your fork of the homework repo, and to copy it to a new folder to work on, run these commands in iTerm:
 ```
-cd ~/projects/homework
+cd ~/sei/homework
 
 git pull upstream master
 
 # copy the previous solution to where ever you keep your warmups
 
-cp -r warmups/week3/day01_text_soup/ ~/Projects/sei37-classwork/warmup/textsoup2  
+cp -r warmups/week3/day01_text_soup/ ~/sei/sei37-classwork/warmup/textsoup2  
 
 curl https://raw.githubusercontent.com/dataarts/dat.gui/master/build/dat.gui.js >js/dat.gui.js
 
