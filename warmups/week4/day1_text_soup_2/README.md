@@ -11,18 +11,18 @@ To get started, look at the examples on the package page linked to above (but no
 ### BONUS:
 - add a controller to change the add word interval (consider [example #7](https://workshop.chromeexperiments.com/examples/gui/#7--Events) from the page above
 - add a controller to change the text colour using the colour controller ([example 4](https://workshop.chromeexperiments.com/examples/gui/#4--Color-Controllers))
-add a text field controller, and use the word(s) from the text field in between every other random word that is added
-add a button controller which clears all words off the screen when pressed
+- add a text field controller, and use the word(s) from the text field in between every other random word that is added
+- add a button controller which clears all words off the screen when pressed
 ### HINTS:
 - To make sure you have the up-to-date Text Soup warmup solution in your fork of the homework repo, and to copy it to a new folder to work on, run these commands in iTerm:
 ```
-cd ~/projects/sei35-homework
+cd ~/sei/homework
 
 git pull upstream master
 
 # copy the previous solution to where ever you keep your warmups
 
-cp -r warmups/week3/day01_text_soup/ ~/Projects/sei35-classwork/warmup/textsoup2  
+cp -r warmups/week3/day01_text_soup/ ~/sei/sei37-classwork/warmup/textsoup2  
 
 curl https://raw.githubusercontent.com/dataarts/dat.gui/master/build/dat.gui.js >js/dat.gui.js
 
