@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 74px;
+}
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 40px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+}
+p.small {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+
+h1::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h2::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h3::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+h4::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+p::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+p.small::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+label::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+
+h1#sub-heading::selection {
+  background-color: #f40157;
+  color: #fff;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 SCROLL BAR                                 */
+/* -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 12px;
+  background:#f0f0f
+}
+
+::-webkit-scrollbar-track {
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background:#000058;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000058;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 INDEX PAGE                                 */
+/* -------------------------------------------------------------------------- */
+
+body.home {
+  background: url("../assets/bg-01@3x.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+}
+
+.index-content {
+  position: absolute;
+  width: 700px;
+  color: white;
+  left: 8%;
+  top: 10%;
+}
+
+h1#hero-heading {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 100px;
+  color: #000058;
+}
+
+h1#sub-heading {
+  margin-bottom: 60px;
+}
+
+
+.scroll-down-icon, .scroll-down-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.scroll-down-text {
+  margin-left: 20px;
+  color: white;
+}
+
+.scroll-down-icon {
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.scroll-down:hover .scroll-down-icon {
+  transform: translate(0px, 12px);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ABOUT PAGE                                 */
+/* -------------------------------------------------------------------------- */
+
+body.about, body.works, body.contact {
+  background: url("../assets/bg-02@3x.png") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+}
+
+/* ------------------------------- MAIN LAYOUT ------------------------------ */
+
+.content {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 5%;
+  bottom: 5%;
+  /* overflow: hidden; */
+}
+
+.left-sidebar {
+  height: 100%;
+  padding: 40px 0px;
+}
+
+.right-content {
+  height: 100%;
+  padding: 40px;
+}
+
+.left-sidebar {
+  display: inline-block;
+  width: 25%;
+  background-color: #000058;
+  vertical-align: top;
+}
+
+.right-content {
+  display: inline-block;
+  width: 75%;
+  background-color: #fff;
+  vertical-align: top;
+  overflow: auto;
+}
+
+/* ------------------------------ LEFT SIDEBAR ------------------------------ */
+
+.logo {
+  margin: 40px 60px 40px 60px;
+}
+
+.left-sidebar a {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 70px;
+  color: white;
+}
+
+.left-sidebar li {
+  padding: 0 60px;
+  height: 70px;
+}
+
+.left-sidebar li:hover {
+  background-color: #f40157;
+}
+
+.left-sidebar {
+  position: relative;
+}
+
+.left-sidebar p.small {
+  color: #7676cf;
+  position: absolute;
+  bottom: 40px;
+}
+
+.copyRight {
+  padding-left: 60px;
+}
+
+.copyRight:hover p {
+  color: #f40157;
+}
+
+/* ------------------------------ RIGHT CONTENT ----------------------------- */
+
+.right-content h1 {
+  color: #f40157;
+  margin-bottom: 40px;
+}
+
+.right-content h2 {
+  color: #000058;
+  margin-bottom: 30px;
+}
+
+.right-content p {
+  color: #000058;
+}
+
+.right-content {
+  margin-bottom: 40px;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex-item-intro {
+  width: 60%;
+  margin-top: 0px;
+}
+
+.flex-item-photo {
+  vertical-align: top;
+  width: 35%;
+  margin-top: 0px;
+}
+
+.jenn-photo {
+  max-width:100%
+}
+
+/* ------------------------------- EXPERIENCE ------------------------------- */
+
+.experience {
+  background-color: #f0f0f4;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.experience h3 {
+  color: #000058;
+}
+
+.experience h4 {
+  color: #000058;
+  margin-bottom: 15px;
+}
+
+.experience p.small {
+  color: #7676cf;
+}
+
+.company-one img {
+  width: 80px;
+}
+
+/* .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.flex-item-company {
+  width: 48%;
+  margin-top: 30px;
+}
+
+/* .company-one {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  margin-top: 30px;
+} */
+
+.company-one-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.company-one-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  HER WORK                                  */
+/* -------------------------------------------------------------------------- */
+
+
+.flex-item-work {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.works-item-image h3 {
+  height: 200px;
+  line-height: 200px;
+  color: #000058;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pxon {
+  background-color: #fc0d87;
+}
+.electronic-mail {
+  background-color: #7821ff;
+}
+.extremely-online {
+  background-color: #ff7f00;
+}
+.css-perverts {
+  background-color: #abff02;
+}
+.jerseyscript {
+  background-color: #23d7fb;
+}
+.brookly-js {
+  background-color: #7821ff;
+}
+.dhtmlconf {
+  background-color: #fbf323;
+}
+
+.pxon:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.pxon:hover h3 {
+  color: #fc0d87;
+}
+
+
+.electronic-mail:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.electronic-mail:hover h3 {
+  color: #7821ff;
+}
+
+.extremely-online:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.extremely-online:hover h3 {
+  color: #ff7f00;
+}
+
+.css-perverts:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.css-perverts:hover h3 {
+  color: #abff02;
+}
+
+.jerseyscript:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.jerseyscript:hover h3 {
+  color: #23d7fb;
+}
+
+.brookly-js:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.brookly-js:hover{
+  color: #7821ff;
+}
+
+.dhtmlconf:hover {
+  background-color: #000058;
+  cursor: pointer;
+}
+.dhtmlconf:hover h3 {
+  color: #fbf323;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 CONTACT HER                                */
+/* -------------------------------------------------------------------------- */
+
+.contact-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+fieldset {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000058;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0 20px;
+  box-sizing: border-box;
+  border: 2px solid #000058;
+  background-color: #f0f0f4;
+  color: #f40157;
+}
+
+input[type=text]:focus {
+  border: 2px solid #f40157;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f4;
+  border: 2px solid #000058;
+  resize: none;
+  margin: 10px 0 20px;
+  color: #f40157;
+}
+
+textarea:focus {
+  border: 2px solid #f40157;
+}
+
+button {
+  width: 100%;
+  background-color: #f40157;
+  border: none;
+  color: white;
+  padding: 14px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #000058;
+}
