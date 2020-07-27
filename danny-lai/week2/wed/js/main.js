@@ -18,8 +18,11 @@ bun.style.right = '0px';
 bun.style.bottom = '0px';
 
 raveCat.style.position = 'absolute';
-raveCat.style.top = '0px';
-
+raveCat.style.top = '0';
+raveCat.style.bottom = '500';
+raveCat.style.left = '0';
+raveCat.style.right = '0';
+raveCat.style.margin = 'auto'
 
 // Create a function called catWalk() that moves the cat 10 pixels to the right of where it started, by changing the "left" style property.
 
