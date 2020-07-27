@@ -7,41 +7,49 @@ let savingsBalance = 0;
 
 //// Checking account   /////////////////////////////////////////////
 
-// when Deposit button is clicked, process the value entered on the GUI
+// when Deposit button is clicked, get the value at input amount and place it in a variable.
 $( '#checkingDeposit' ).on( 'click', function() {
-        //first test input for validity, and deposits zero if not.
-        depositFromChecking(isValid('#checkingAmount'));
+    const checkingInputVal = Number($('#checkingAmount').val());  //convert string to number and assings it to a variable.
+    if ((Math.floor(checkingInputVal) === checkingInputVal) && (checkingInputVal > 0)) {  // Inputted value is a whole number and is > zero.
+        depositFromChecking(checkingInputVal);  // run the input function
         updateGUI();
+    }; // end if input > zero
 }); // end deposit button press
 
-// when Withdraw button is clicked, process the value entered on the GUI
+// when Withdraw button is clicked, get the value at input amount and place it in a variable.
 $( '#checkingWithdraw' ).on( 'click', function() {
-        //first test input for validity, and withdraws zero if not.
-        withdrawFromChecking(isValid('#checkingAmount'));
+  const checkingInputVal = Number($('#checkingAmount').val());  //convert string to number and assings it to a variable.
+  if ((Math.floor(checkingInputVal) === checkingInputVal) && (checkingInputVal > 0)) {  // Inputted value is a whole number and is > zero.
+        withdrawFromChecking(checkingInputVal);  // run the input function
         updateGUI();
+    }; // end if input > zero.
 }); // end withdrawal button press
 
 
 /// Savings account   //////////////////////////////////////////
 
-// when Deposit button is clicked, process the value entered on the GUI
+// when Deposit button is pressed, get the value at input amount and place it in a variable.
 $( '#savingsDeposit' ).on( 'click', function() {
-        //first test input for validity, and deposits zero if not.
-        depositFromSavings(isValid('#savingsAmount'));
+  const savingsInputVal = Number($('#savingsAmount').val());  //convert string to number and assings it to a variable.
+  if ((Math.floor(savingsInputVal) === savingsInputVal) && (savingsInputVal > 0)) {  // Inputted value is a whole number and is > zero.
+        depositFromSavings( savingsInputVal );  // run input function
         updateGUI();
+    }; // end if input > 0
 }); // end deposit button press
 
-// when Withdraw button is clicked, process the value entered on the GUI
+// when Withdraw button is pressed, get the value at input amount and place it in a variable.
 $( '#savingsWithdraw' ).on( 'click', function() {
-        //first test input for validity, and withdraws zero if not.
-        withdrawFromSavings(isValid('#savingsAmount'));
+  const savingsInputVal = Number($('#savingsAmount').val());  //convert string to number and assings it to a variable.
+  if ((Math.floor(savingsInputVal) === savingsInputVal) && (savingsInputVal > 0)) {  // Inputted value is a whole number and is > zero.
+        withdrawFromSavings( savingsInputVal );  // run input function
         updateGUI();
+      }; // end if input > zero.
 }); // end withdrawal button press
 
 
-///                                                                           ///
+
 ////////////////////////////  Banking Code   ////////////////////////////////////
-///                                                                           ///
+
 
 ////// Requests from CHECKING Account    //////
 
@@ -81,9 +89,6 @@ const withdrawFromSavings = function( withdrawAmount ) {
   } // end if.. do nothing otherwise.
 };
 
-
-////////////////////   Shared Function   ///////////////////
-
 const updateGUI = function() { // GUI balance update of both accounts
 
     $('#checkingAmount').val(''); // clears GUI input box. Ready for next transaction
@@ -103,13 +108,13 @@ const updateGUI = function() { // GUI balance update of both accounts
     }; // end if.
 };
 
-const isValid = function(htmlTag) {  // Returns the value as an integer if the input is valid.
-    //Only positive integers are valid inputs. Returns zero otherwise.
-    const inputVal = Number($(htmlTag).val());  //convert string to number.
-    if ((Math.floor(inputVal) === inputVal) && (inputVal > 0)) {
-      // Inputted value is a whole number and is > zero.
-      return inputVal;
-    }else {
-      return 0;
-    }; // end if.
-}; // end isValid
+/////////////////////////// note!!! need to fix input to only take an int not 342thfk or lsdfkasj34234..
+// At the moment it will strip the intiger from the letters.. But I need the whole input to only be numbers.
+// at present will accept 475fjdls and use it as 475..
+/// won't do anything if jfkd456 is written. Won't even clear the screen.
+// needs to clear screen when an invalid input is put in.
+
+// another issue is that, upon withdrawal from an account, even if the other account has no money in it but has not been touched, the GUI turns red.
+
+
+// (Math.floor(checkingInputVal) === checkingInputVal) &&
