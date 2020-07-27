@@ -24,44 +24,64 @@
   <nav>
     <div class="nav-wrapper">
       <ul class="nav-bar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#bio">Biography</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="listItem"><a class="navLink"href="#home">Home</a></li>
+        <li class="listItem"><a class="navLink"href="#bio">Biography</a></li>
+        <li class="listItem"><a class="navLink"href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <columnContainer class="container">
     <leftColumn class="leftColumn">
-      <h1>TEST</h1>
-      <h3>A real test</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>A Brief Introduction</h1>
+      <h3>The man who revolutionized the Information Age</h3>
+      <p>Linus Benedict Torvalds, born 28 December 1969, is a Finnish-American software engineer who is the creator and, historically, the principal developer of the Linux kernel, which is the kernel for GNU/Linux operating systems (distributions) and other operating systems such as Android and Chrome OS. He also created the distributed version control system Git and the scuba dive logging and planning software Subsurface.</p>
+      <p>He was honoured, along with Shinya Yamanaka, with the 2012 Millennium Technology Prize by the Technology Academy Finland "in recognition of his creation of a new open source operating system for computers leading to the widely used Linux kernel." He is also the recipient of the 2014 IEEE Computer Society Computer Pioneer Award[6] and the 2018 IEEE Masaru Ibuka Consumer Electronics Award.</p>
     </leftColumn>
 
     <rightColumn class="rightColummn">
-      <img src="https://tedideas.files.wordpress.com/2016/04/featured_torvalds_linux_ted_31.jpg?w=1500">
+      <img class="linusImg" src="https://tedideas.files.wordpress.com/2016/04/featured_torvalds_linux_ted_31.jpg?w=1500">
     </rightColumn>
   </columnContainer>
 
-  <videoBar>
-    <ul>
-      <li><iframe width="560" height="315" src="https://www.youtube.com/embed/o8NPllzkFhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-      <li><iframe width="560" height="315" src="https://www.youtube.com/embed/e7Wpx12CDAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-      <li><iframe width="560" height="315" src="https://www.youtube.com/embed/WVTWCPoUt8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-    </ul>
-  </videoBar>
+<div class="videoBar">
+  <div class="column">
+    <div class="card"><iframe width=90% src="https://www.youtube.com/embed/o8NPllzkFhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+  <div class="column">
+    <div class="card"><iframe width=90% src="https://www.youtube.com/embed/e7Wpx12CDAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+  <div class="column">
+    <div class="card"><iframe width=90% src="https://www.youtube.com/embed/WVTWCPoUt8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+</div>
+
 
   <bio>
     <leftColumn>
-      <h1></h1>
+      <h1>Personal Life</h1>
       <h3></h3>
-      <p></p>
+      <p>Torvalds was born in Helsinki, Finland, on 28 December 1969. He is the son of journalists Anna and Nils Torvalds, and the grandson of statistician Leo Törnqvist and of poet Ole Torvalds. His parents were campus radicals at the University of Helsinki in the 1960s. His family belongs to the Swedish-speaking minority in Finland. Torvalds was named after Linus Pauling, the Nobel Prize-winning American chemist, although in the book Rebel Code: Linux and the Open Source Revolution, Torvalds is quoted as saying, "I think I was named equally for Linus the Peanuts cartoon character", noting that this makes him half "Nobel Prize-winning chemist" and half "blanket-carrying cartoon character".</p>
+
+      <p>Torvalds attended the University of Helsinki between 1988 and 1996, graduating with a master's degree in computer science from the NODES research group. His academic career was interrupted after his first year of study when he joined the Finnish Army Uusimaa brigade, in the summer of 1989, selecting the 11-month officer training program to fulfill the mandatory military service of Finland. In the army he held the rank of Second Lieutenant, with the role of an artillery observer. Torvalds bought computer science professor Andrew Tanenbaum's book Operating Systems: Design and Implementation, in which Tanenbaum describes MINIX, an educational stripped-down version of Unix. In 1990, he resumed his university studies, and was exposed to UNIX for the first time, in the form of a DEC MicroVAX running ULTRIX. His MSc thesis was titled Linux: A Portable Operating System.</p>
+
+      <p>His interest in computers began with a Commodore VIC-20, at the age of 11 in 1981, initially programming in BASIC, but later by directly accessing the 6502 CPU in machine code. He did not make use of assembly language. After the VIC-20 he purchased a Sinclair QL, which he modified extensively, especially its operating system. "Because it was so hard to get software for it in Finland, Linus wrote his own assembler and editor (in addition to Pac-Man graphics libraries)" for the QL, as well as a few games. He wrote a Pac-Man clone named Cool Man. On 5 January 1991 he purchased an Intel 80386-based clone of IBM PC before receiving his MINIX copy, which in turn enabled him to begin work on Linux.</p>
+
+      <p>Linus Torvalds is married to Tove Torvalds (née Monni)—a six-time Finnish national karate champion—whom he first met in late 1993. Linus was running introductory computer laboratory exercises for students and instructed the course attendees to send him an e-mail as a test, to which Tove responded with an e-mail asking for a date. Tove and Linus were later married and have three daughters, two of whom were born in the United States. The Linux kernel's reboot system call accepts their dates of birth (written in hexadecimal) as magic values.</p>
+
+      <p>Torvalds has described himself as "completely a-religious—atheist", adding that "I find that people seem to think religion brings morals and appreciation of nature. I actually think it detracts from both. It gives people the excuse to say, 'Oh, nature was just created,' and so the act of creation is seen to be something miraculous. I appreciate the fact that, 'Wow, it's incredible that something like this could have happened in the first place.'" He later added that while in Europe religion is mostly a personal issue, in the United States it has become very politicized. When discussing the issue of church and state separation, Torvalds also said, "Yeah, it's kind of ironic that in many European countries, there is actually a kind of legal binding between the state and the state religion." However, in a story about the March LinuxWorld Conference titled "Linus the Liberator", Torvalds is quoted as saying "There are like two golden rules in life. One is 'Do unto others as you would want them to do unto you.' For some reason, people associate this with Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be proud of what you do.'"</p>
+
+      <p>In 2010, Torvalds became a United States citizen and registered to vote in the United States. He is unaffiliated with any U.S. political party, saying, "I have way too much personal pride to want to be associated with any of them, quite frankly."</p>
+
+      <p>Linus developed an interest in scuba diving in the early 2000s and went on to achieve numerous certifications, which later led to him creating the Subsurface project.</p>
     </leftColumn>
 
     <rightColumn>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42065.74153942787!2d24.906295988794646!3d60.15628245318291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki%2C%20Finland!5e0!3m2!1sen!2sau!4v1594743352451!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42065.74153942787!2d24.906295988794646!3d60.15628245318291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki%2C%20Finland!5e0!3m2!1sen!2sau!4v1594743352451!5m2!1sen!2sau" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </rightColumn>
   </bio>
+
+
   <!-- Footer -->
   <footer class="w3-container w3-dark-grey" style="padding:32px">
     <a href="#" class="button black padding large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
