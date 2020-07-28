@@ -1,29 +1,58 @@
 require 'colorize'
 
+def enter_two_numbers
+  # Enter numbers
+  print "Enter numbers you would like to perform (separated by ','): ".green
+  # Convert string to array
+  gets.split(',')
+end
+
+def enter_one_number
+  # Enter numbers
+  print "Enter number you would like to perform: ".green
+  # Convert string to number
+  gets.to_f
+end
+
 # Arithmetic methods
-def addition(number_1, number_2)
-  number_1 + number_2
+def addition
+  number = enter_two_numbers
+  number_1 = number[0].to_f
+  number_2 = number[1].to_f
+  puts number_1 + number_2
 end
 
-def subtraction(number_1, number_2)
-  number_1 - number_2
+def subtraction
+  number = enter_two_numbers
+  number_1 = number[0].to_f
+  number_2 = number[1].to_f
+  puts number_1 - number_2
 end
 
-def multiplication(number_1, number_2)
-  number_1 * number_2
+def multiplication
+  number = enter_two_numbers
+  number_1 = number[0].to_f
+  number_2 = number[1].to_f
+  puts number_1 * number_2
 end
 
-def divisions(number_1, number_2)
-  number_1 / number_2
+def divisions
+  number = enter_two_numbers
+  number_1 = number[0].to_f
+  number_2 = number[1].to_f
+  puts number_1 / number_2
 end
 
-def exponents(number_1, number_2)
-  number_1 ** number_2
+def exponents
+  number = enter_one_number
+  puts number ** 2
 end
 
-def square_roots(number_1, number_2)
-  number_1 ** number_2
+def square_roots
+  number = enter_one_number
+  puts Math sqrt(number)
 end
+
 
 # Welcome message: enter any button to start or enter "q" to quit
 puts "Ruby Calculator".yellow
@@ -40,34 +69,24 @@ while menu_message != "q"
   print "Would you like to 'a'ddition, 's'ubtraction, 'm'ultiplication, 'd'ivision, 'e'xponents or 'sq'uare roots? Enter the quoted words to start: ".green
   operation = gets.chomp.downcase
 
-  # Enter numbers
-  print "Enter numbers you would like to perform (separated by ','): ".green
-  # Convert string to array
-  numbers = gets.split(',')
-  # Get number by array index
-  number_1 = numbers[0].to_f
-  number_2 = numbers[1].to_f
-
   # require 'pry'; binding.pry
   # Declare result
   result = 0
   # Check arithmetic methods
   case operation
   when "a"
-    result = addition number_1, number_2
+    addition
   when "s"
-    result = subtraction number_1, number_2
+    subtraction
   when "m"
-    result = multiplication number_1, number_2
+    multiplication
   when "d"
-    result = divisions number_1, number_2
+    divisions
   when "c"
-    result = exponents number_1, number_2
+    exponents
   when "sq"
-    result = square_roots number_1, number_2
+    square_roots
   end
-  
-  puts "The answer is #{result}".green
 
 end
 
