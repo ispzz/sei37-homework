@@ -9,7 +9,10 @@
 
 # add_output = first_number + second_number
 
+while 
+
 puts "Hello, welcome to the calculator. I can add, subtract, multiply and divide. Type each of these words to select the option."
+
 
 if "add" 
     puts "What is the first number?"
