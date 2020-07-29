@@ -12,7 +12,7 @@ cat.style.left = "0px";
 
     // const catWalk = setInterval( function(){
     //   const oldLeft = parseInt(cat.style.left);
-    //   const newLeft = oldLeft + 10;
+    //   const newLeft = oldLeft + 2;
     //   cat.style.left = newLeft + "px";
     // }, 50 );
 
@@ -23,15 +23,26 @@ cat.style.left = "0px";
 // Bonus #1: When the cat reaches the right-hand of the screen, restart them at the left hand side ("0px"). So they should keep walking from left to right across the screen, forever and ever.
 
 
-    const catWalkLength = (window.innerWidth - cat.width) + "px";
+//     const catWalkLength = (window.innerWidth - cat.width) + "px";
+//
+const catWalk = setInterval( function(){
+  const oldLeft = parseInt(cat.style.left);
+  const newLeft = oldLeft + 1;
+  cat.style.left = newLeft + "px";
 
-    const catWalk = setInterval( function(){
-      const oldLeft = parseInt(cat.style.left);
-      const newLeft = oldLeft + 10;
-      cat.style.left = newLeft + "px";
-    if ( oldLeft > window.innerWidth ) {
+  if (newLeft > window.innerWidth - cat.width){
     cat.style.left = 0;
-  }; //if
+  };
+});
 
+//     cat.style.left = 0;
+//   }; //if
+//
+//
+// setInterval(catWalk, 50);
 
-setInterval(catWalk, 50);
+$(document).on('click',function(){
+  const audio = new Audio("I'm Too Sexy.mp3");
+  audio.play();
+
+// });

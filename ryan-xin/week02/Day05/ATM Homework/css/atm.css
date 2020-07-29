@@ -39,6 +39,7 @@
   padding: 25px 0;
 }
 
+
 .clear {
   clear: both;
 }
@@ -54,4 +55,9 @@
 
 .money-background {
   background-color: grey;
+}
+
+.message {
+  font-size: 12px;
+  color: #F52F4F;
 }
