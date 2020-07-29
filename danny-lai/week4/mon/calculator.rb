@@ -55,15 +55,15 @@ while run_calculator == 0
   if current_calculation == "error"
     puts "Invalid option. Please try again.\n".red
   else
-    puts "Please enter the first number: ".green
+    puts "Please enter the first number: ".light_blue
     first_number = gets.to_i
-    puts "Please enter the second number: ".green
+    puts "Please enter the second number: ".light_blue
     second_number = gets.to_i
 
     result = calculate(current_calculation, first_number, second_number)
 
     puts "The answer is #{result}."
-    puts "Type 0 to return to the menu, or 1 to exit the calculator: ".green
+    puts "Type 0 to return to the menu, or 1 to exit the calculator: ".light_blue
     run_calculator = gets.to_i
   end #end of conditional
 end #end of while run_calculator
