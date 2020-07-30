@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital@1&display=swap');
+
+body {
+  margin: 10px;
+
+  background-color: #090909;
+  font-family: 'Courgette', cursive;
+
+}
+
+.bio {
+    display: inline-block;
+    width: 500px;
+    height: 800px;
+    overflow: scroll;
+    color: white;
+      border: 1px solid green;
+}
+
+.gradientTop {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   border: 1px solid green;
+}
+
+.bio h1 {
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+.bio p {
+  position: relative;
+  top: 600px;
+}
+
+.staticImage {
+    display: inline-block;
+    width: 500px;
+      border: 1px solid green;
+}

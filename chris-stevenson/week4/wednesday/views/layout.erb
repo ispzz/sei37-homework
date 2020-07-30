@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Movie Search Database</h1>
+    <form action="/search">
+      <label>
+        Search:
+        <input type="text" name="searched_movie" placeholder="e.g. Avengers">
+      </label>
+      <br>
+      <button>Search</button>
+    </form>
+
+    <hr/>
+
+    <%= yield %>
+
+    <hr/>
+  </body>
+</html>

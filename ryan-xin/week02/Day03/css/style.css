@@ -1,0 +1,31 @@
+.happyBirthday {
+  width: 500px;
+  margin: 300px auto 0;
+  visibility: hidden;
+}
+
+.flyCat {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+.catLeft {
+  position: fixed;
+  left: 0;
+  bottom: -500px;
+}
+
+.catRight {
+  position: fixed;
+  right: 0;
+  bottom: -500px;
+}
+
+.greyCat {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  visibility: hidden;
+}
