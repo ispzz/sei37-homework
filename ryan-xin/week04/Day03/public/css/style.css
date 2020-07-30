@@ -1,0 +1,68 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img { 
+  margin-top: 30px;
+  border: 1px solid #414141;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+ margin: 20px 0;
+}
+
+h3 {
+  margin: 10px 0  ;
+}
+
+p {
+  padding: 10px 0;
+}
+
+form {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input, button {
+  border-radius: 0;
+  border: 0;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#poster {
+  width: 200px;
+}
+
+footer {
+  background-color: #000000;
+  width: 800px;
+  position: fixed;
+  bottom: 0;
+}
