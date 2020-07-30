@@ -6,7 +6,8 @@
 <% @result.each do |movie| %>
     <li> Title: <%= movie['title'] %></li>
     <li>Popularity: <%= movie['popularity'] %></li>
-    <br>
+    <li>Release date: <%=movie['release_date']%></li>
+    
 <% end %>
 </ul>
 
