@@ -4,14 +4,14 @@
 
 
 html{
-  background-color: rgb(240, 194, 122);
+  background-color: lightgrey;
 }
 
 body{
-  margin:20px;
-  padding-top: 20px;
-  padding:20px;
-  background-color: rgb(194, 194, 194);
+  margin:25px;
+  padding-top: 25px;
+  padding:25px;
+  background-color: white;
   box-sizing: border-box;
 }
 
@@ -19,40 +19,127 @@ body.Container {
   float: left;
 }
 
-body.Container.leftColumn {
-  width: 30%
-}
-body.Container.rightColumn {
-  width:60%;
-}
 
-.videoBar {
-
+.leftColumn {
+  float: left;
+  table-layout: inherit;
+  text-align: left;
+  background-color: white
 }
 
+container.leftColumn {
+  float: left;
+  text-align: left;
+  background-color: white
+  width: 50%
+}
+
+leftColumn p {
+  float: left;
+  text-align: left;
+  background-color: white
+  width: 50%
+
+}
+
+.rightColumn {
+  float: right;
+  background-color: white
+
+}
+
+container.rightColumn {
+  float: right;
+  background-color: white;
+  width: 40%
+}
+
+.linusImg {
+  width: 50%;
+}
+ /* VIDEO BAR EMBEDDED */
+
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 31%;
+  padding:10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 10px 10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+p {
+  font-family: monospace;
+}
+
+/* Navigation Bar */
 
 
 /* Add a black background color to the top navigation */
 .nav-wrapper {
   background-color: black;
   overflow: hidden;
-  width: 100%;
+  width: 100%
 }
 
 .nav-bar {
   float: left;
   color: white;
-  text-align: center;
-  padding: 20px 20px;
+  text-align: left;
+  padding: 20px, 20px;
   text-decoration: none;
   font-size: 20px;
 }
+
+.listItem {
+  list-style: none;
+  text-align: inherit;
+  display: inline;
+  padding-right: 20px;
+}
+
+.navLink {
+  color: white;
+  text-align: justify;
+  text-decoration: none;
+  font-family: monospace;
+}
+
 
 /* Style the links inside the navigation bar */
 
 
 .heading {
   text-align:center;
+  font-family: monospace;
+  font-size: 20px
 
 }
 

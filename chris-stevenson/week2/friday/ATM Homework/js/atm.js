@@ -33,12 +33,13 @@ const moveMoney = function(method, account, inputValue, sisterAccount){
   }
   //inputs that new balance into the DOM
   $(account).text(`$${newCurrentBalance}`);
+  //check if each account's background DOM needs to change colour
   checkIfMaxed(account);
   checkIfMaxed(sisterAccount);
 };//move money function
 
 // ----------------------------- Change colour of maxed out accounts -----------------------------
-//Checks if the account is out of money and changes the backgroud to red. Will change it back to gray if new money is deposited. 
+//Checks if the account is out of money and changes the backgroud to red. Will change it back to gray if new money is deposited.
 const checkIfMaxed = function(account) {
   if(account.text() === '$0') {
     $(account).css('background-color', 'red');
@@ -64,5 +65,6 @@ $(':button').on('click', function(){
   const account = $(this).siblings('div[class=balance]');
   //run the move money function
   moveMoney(this.value, $(account), inputValue, $(sisterAccount));
+  //reset the input text field to a blank string
   $(this).siblings('input[type=text]').val('');
 });
