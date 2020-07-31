@@ -1,0 +1,48 @@
+<h2>Edit Animal: <%= @player['name']%></h2>
+
+<form action="/players/<%= @player['id']%>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @player['name']%>">
+  </label>
+    <br>
+
+  <label>
+    Club:
+    <input type="text" name="club" value="<%= @player['club']%>">
+  </label>
+    <br>
+
+  <label>
+    Country:
+    <input type="text" name="country" value="<%= @player['country']%>">
+  </label>
+    <br>
+
+  <label>
+    Position:
+    <input type="text" name="position" value="<%= @player['position']%>">
+  </label>
+    <br>
+
+  <label>
+    Goals:
+    <input type="text" name="goals" value="<%= @player['goals']%>">
+  </label>
+    <br>
+
+  <label>
+    Age:
+    <input type="text" name="age" value="<%= @player['age']%>">
+  </label>
+    <br>
+
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%= @player['image_url']%>">
+  </label>
+    <br>
+
+  <input type="submit" value="Update Player">
+</form>
