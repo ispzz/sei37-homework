@@ -1,0 +1,19 @@
+<h2>Edit <%= @airjordan['name'] %></h2>
+
+<form action="/airjordans/<%= @airjordan['id'] %>" method="post">
+  <label for="name">Name:</label><br>
+  <input id="name" type="text" name="name" value="<%= @airjordan['name'] %>"><br>
+  <label for="original_release">Original Release:</label><br>
+  <input id="original_release" type="text" name="original_release" value="<%= @airjordan['original_release'] %>"><br>
+  <label for="designer">Designer:</label><br>
+  <input id="designer" type="text" name="designer" value="<%= @airjordan['designer'] %>"><br>
+  <label for="color">Color:</label><br>
+  <input id="color" type="text" name="color" value="<%= @airjordan['color'] %>"><br>
+  <label for="price">Price:</label><br>
+  <input id="price" type="text" name="price" value="<%= @airjordan['price'] %>"><br>
+  <label for="retro">Retro:</label><br>
+  <input id="retro" type="text" name="retro" value="<%= @airjordan['retro'] %>"><br>
+  <label for="image_url">Image URL:</label><br>
+  <input id="image_url" type="text" name="image_url" value="<%= @airjordan['image_url'] %>"><br>
+  <button>Update Air Jordan</button>
+</form>
