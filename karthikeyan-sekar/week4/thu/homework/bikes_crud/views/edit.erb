@@ -1,0 +1,43 @@
+<h2>Edit bikes: <%= @bike['brand'] %></h2>
+
+<form action="/bikes/<%= @bike['id'] %>" method="post">
+
+  <label>
+    Brand:
+    <input type="text" name="brand" value="<%= @bike['brand'] %>">
+  </label>
+  <br>
+
+  <label>
+    Kind:
+    <input type="text" name="kind" value="<%= @bike['kind'] %>">
+  </label>
+  <br>
+
+  <label>
+    Models:
+    <input type="text" name="models" value="<%= @bike['models'] %>">
+  </label>
+  <br>
+
+  <label>
+    Price:
+    <input type="text" name="price" value="<%= @bike['price'] %>">
+  </label>
+  <br>
+
+  <label>
+    Available:
+    <input type="text" name="available" value="<%= @bike['available'] %>"><!-- should be a checkbox! -->
+  </label>
+  <br>
+
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%= @bike['image_url'] %>">
+  </label>
+  <br>
+
+  <input type="submit" value="Update bike">
+
+</form>
