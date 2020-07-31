@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+body {
+  background-color: #7CB9E8;
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  color: #e91e63;
+}
+
+li {
+  color: #a549b5;
+}
+
+p {
+  color: #e91e63;
+}

@@ -1,0 +1,15 @@
+<p>As requested! Please see the details of your search:</p>
+
+<ul>
+<!-- NO EQUALS SIGNS IN THE TEMPLATE TAGS FOR THE START AND END OF A LOOP! -->
+<% @movie.each do |name| %>
+  <li> Title: <%=  name['title']  %> </li>
+  <hr>
+  <li> Release Date: <%=  name['release_date']  %> </li>
+  <hr>
+  <li> Overview: <%=  name['overview']  %> </li>
+
+  <br>
+  <br>
+<% end %>
+</ul>
