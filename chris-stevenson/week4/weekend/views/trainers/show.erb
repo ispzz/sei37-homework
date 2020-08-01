@@ -1,0 +1,32 @@
+<a href="/trainers">Back to Trainers</a>
+
+<h1><%= @trainer['name'] %></h1>
+
+<a href="/trainers/<%= @trainer['id'] %>/edit">Edit this trainer</a>
+<a href="/trainers/<%= @trainer['id'] %>/delete">Delete this trainer</a>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trainer['name'] %>
+</p>
+<p>
+  <strong>Age:</strong>
+  <%= @trainer['age'] %>
+</p>
+<p>
+  <strong>Home Town:</strong>
+  <%= @trainer['home_town'] %>
+</p>
+<p>
+  <strong>Pokemon:</strong>
+  <ul>
+    <% @mon.each do |mon| %>
+    <li>
+      <a href="/mon/<%= mon['id'] %>">
+        <%= mon['name'] %>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</p>
+<img src="<%= @trainer['image_url'] %>" alt="<%= @trainer['name'] %>">
