@@ -1,0 +1,11 @@
+<h1>All Bikes</h1>
+
+<ul>
+<% @results.each do |bike| %>
+<li>
+  <a href="/bikes/<%= bike['id'] %>">
+  <%= bike['brand'] %>
+  </a>
+</li>
+<% end %>
+</ul>

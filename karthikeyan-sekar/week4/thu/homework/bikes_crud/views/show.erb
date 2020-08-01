@@ -1,0 +1,31 @@
+<h2>All about <%= @bike['brand'] %></h2>
+​<a href="/bikes/<%= @bike['id'] %>/edit">Edit the bike</a>
+<a href="/bikes/<%= @bike['id'] %>/delete">Delete This bike</a>
+<p>
+  <strong>Brand:</strong>
+  <span><%= @bike['brand'] %></span>
+</p>
+​
+<p>
+  <strong>Kind:</strong>
+  <span><%= @bike['kind'] %></span>
+</p>
+​
+<p>
+  <strong>Models:</strong>
+  <span><%= @bike['models'] %></span>
+</p>
+​
+<p>
+  <strong>Price:</strong>
+  <span><%= @bike['price'] %></span>
+</p>
+​
+<p>
+  <strong>Available:</strong>
+​
+  <span><%=  @bike['available'] %></span>
+​
+</p>
+​
+<img src="<%= @bike['image_url'] %>" alt="<%= @bike['brand'] %>">
