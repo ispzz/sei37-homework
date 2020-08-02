@@ -1,0 +1,11 @@
+<a href="/airjordans/<%= @airjordan['id'] %>/edit">Edit</a>
+| 
+<a href="/airjordans/<%= @airjordan['id'] %>/delete">Delete</a>
+
+<h2><%= @airjordan['name'] %></h2>
+<img src="<%= @airjordan['image_url'] %>" alt="<%= @airjordan['name'] %>">
+<p>Original Release: <%= @airjordan['original_release'] %></p>
+<p>Designer: <%= @airjordan['designer'] %></p>
+<p>Color: <%= @airjordan['color'] %></p>
+<p>Price: <%= @airjordan['price'] %></p>
+<p>Retro: <%= @airjordan['retro'] = 1 ? "Yes" : "No" %></p>

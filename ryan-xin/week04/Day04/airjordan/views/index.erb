@@ -1,0 +1,7 @@
+<h2>All Models</h2>
+
+<ul class="list">
+  <% @results.each do |airjordan| %>
+    <li><a href="/airjordans/<%= airjordan['id'] %>"><%= airjordan["name"] %></a></li>
+  <% end%>
+</ul>
