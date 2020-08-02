@@ -1,0 +1,11 @@
+<h2>All Players</h2>
+
+<ul>
+  <% @results.each do |player| %>
+  <li>
+    <a href="/players/<%= player['id'] %>"><%= player['name'] %></a>
+    (<%= player['country'] %>)
+    (id= <%= player['id'] %>)
+  </li>
+  <% end %>
+</ul>

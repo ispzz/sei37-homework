@@ -29,6 +29,11 @@
 
 <p>
 <strong>Models:</strong>
+<ul>
+  <% @brand.cars.each do |row| %>
+  <li><a href="/cars/<%= row['id'] %>"><%= row.name %></a></li>
+  <% end %>
+</ul>
 </p>
 
 <img src="<%= @brand['logo_url'] %>" alt="<%= @brand['name'] %>">

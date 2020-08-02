@@ -1,0 +1,14 @@
+<h3>Search results for "<%=@movie_name%>":</h3>
+
+<ul>
+<% @result.each do |detail| %>
+
+  <li><a href=<%="/search/result/#{detail['id']}"%>><img src=<%="https://image.tmdb.org/t/p/w94_and_h141_bestv2#{detail['poster_path']}" %>></a></li>
+
+  <li><h3><%= "Movie Name: #{detail['title']}" %></h3></li>
+
+  <li><%= "Released Date: #{detail['release_date']}" %></li>
+  
+  <br>
+<% end %>
+</ul>

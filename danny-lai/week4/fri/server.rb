@@ -64,6 +64,7 @@ get "/brands/:id" do
   @brands = Brand.all
   @brand = Brand.find params[:id]
   erb :'brands/show'
+  # binding.pry
 end
 
 # UPDATE -----------------------------------------------------------------------
