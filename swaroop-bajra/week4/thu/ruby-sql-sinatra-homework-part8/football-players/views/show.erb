@@ -1,0 +1,31 @@
+<h2>All about: <%= @player['name']%></h2>
+<a href="/players/<%= @player['id']%>/edit">Edit this Player</a> | 
+<a href="/players/<%= @player['id']%>/delete">Delete this Player</a>
+
+<p>
+  <strong>Club:</strong>
+  <%= @player['club'] %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @player['country'] %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @player['position'] %>
+</p>
+
+<p>
+  <strong>Goals:</strong>
+  <%= @player['goals'] %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @player['age'] %>
+</p>
+
+
+<img src="<%= @player['image_url'] %>" alt="<%= @player['name']%>">

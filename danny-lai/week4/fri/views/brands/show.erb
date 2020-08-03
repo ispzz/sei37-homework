@@ -1,0 +1,39 @@
+<h2>All about: <%= @brand['name'] %></h2>
+
+<a href="/brands">Return to index</a>
+|
+<a href="/brands/<%= @brand['id'] %>/edit">Edit this brand</a>
+|
+<a href="/brands/<%= @brand['id'] %>/delete">Delete this brand</a>
+
+<p>
+<strong>Established in:</strong>
+<span class="text">
+  <%= @brand['established_in'] %>
+</span>
+</p>
+
+<p>
+<strong>Country of origin:</strong>
+<span class="text">
+  <%= @brand['country_of_origin'] %>
+</span>
+</p>
+
+<p>
+<strong>Description:</strong>
+<span class="text">
+  <%= @brand['description'] %>
+</span>
+</p>
+
+<p>
+<strong>Models:</strong>
+<ul>
+  <% @brand.cars.each do |row| %>
+  <li><a href="/cars/<%= row['id'] %>"><%= row.name %></a></li>
+  <% end %>
+</ul>
+</p>
+
+<img src="<%= @brand['logo_url'] %>" alt="<%= @brand['name'] %>">

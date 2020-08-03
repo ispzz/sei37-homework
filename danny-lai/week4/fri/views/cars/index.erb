@@ -1,0 +1,14 @@
+<h2>All car models</h2>
+
+<a href="/cars/new">Add car</a>
+
+<ul>
+  <% @cars.each do |row| %>
+  <li>
+    <a href="/cars/<%= row['id'] %>"><%= row['name'] %></a>
+    (<%= row.brand.name %>)
+  </li>
+  <% end %>
+</ul>
+
+<a href="/">Return to home</a>

@@ -1,0 +1,42 @@
+<h2>Edit brand: <%= @brand['name'] %></h2>
+
+<form action="/brands/<%= @brand['id'] %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @brand['name'] %>">
+  </label>
+  <br>
+  <br>
+
+  <label>
+    Established in (year):
+    <input type="text" name="established_in" value="<%= @brand['established_in'] %>">
+  </label>
+  <br>
+  <br>
+
+  <label>
+    Country of origin:
+    <input type="text" name="country_of_origin" value="<%= @brand['country_of_origin'] %>">
+  </label>
+  <br>
+  <br>
+
+  <label>
+    Description:
+    <input type="text" name="description" value="<%= @brand['description'] %>">
+  </label>
+  <br>
+  <br>
+
+  <label>
+    Logo URL:
+    <input type="text" name="logo_url" value="<%= @brand['logo_url'] %>">
+  </label>
+  <br>
+  <br>
+
+  <input type="submit" value="Update brand">
+
+</form>

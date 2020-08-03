@@ -1,0 +1,10 @@
+
+
+<h2><%= @result['title'] %></h2>
+<h4>Popularity Rank: <%= @result['popularity'] %></h4>
+<h4>Score: <%= @result['vote_average'] %>/10</h4>
+<h4>Release Date: <%= @result['release_date'] %></h4>
+<img src="https://image.tmdb.org/t/p/w500/<%="#{@result['poster_path']}"%>" alt="Poster for <%="#{@result['title']}"  %>">
+<h4>Budget: $<%= @result['budget'] %></h4>
+<h4>Overview:</h4>
+<p><%= @result['overview'] %></p>

@@ -1,0 +1,12 @@
+body {
+  background: rgba(255, 161, 0, 0.5);
+  font-family: Helvetica;
+}
+
+a {
+  color: rgb(0, 79, 255);
+}
+
+img {
+  max-width: 600px;
+}
