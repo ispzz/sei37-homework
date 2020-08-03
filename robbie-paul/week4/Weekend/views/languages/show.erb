@@ -1,0 +1,32 @@
+<h2> All about: <%= @language['name'] %></h2>
+
+<a href="/languages/<%= @language['id']%>/edit">Edit this language </a>
+<a href="/languages/<%= @language['id']%>/delete">Delete this language </a>
+
+<p> 
+    <strong>Family: </strong>
+    <%= @language['family'] %>
+</p>
+
+<p>
+    <strong>Spoken in: </strong>
+    <%= @language['countries']%>
+</p>
+
+<p>
+    <strong>Description: </strong>
+    <%= @language['description']%>
+</p>
+
+<p>
+    <strong>Level of difficulty /10: </strong>
+    <%= @language['difficulty']%>
+</p>
+
+<p>
+    <strong>Living language: </strong>
+
+    <%= @language['alive'] == 1 ? 'Yes' : 'No' %>
+</p>
+
+<img src="<%= @language['image_url'] %>" alt="<%= @language['name'] %>">
