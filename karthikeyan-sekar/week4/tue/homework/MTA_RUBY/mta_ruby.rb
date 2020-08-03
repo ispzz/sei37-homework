@@ -25,10 +25,10 @@ def get_users_stops_by_line(line,origin_stop,destination_stop)
   destination_stop_index = stop_list.index(destination_stop)
 
   if origin_stop_index < destination_stop_index
- stop_list[origin_stop_index..destination_stop_index]
+ stop_list[origin_stop_index + 1..destination_stop_index]
 
   else
-    stop_list[destination_stop_index..origin_stop_index].reverse()
+    stop_list[destination_stop_index..origin_stop_index - 1].reverse()
     end
   end
 

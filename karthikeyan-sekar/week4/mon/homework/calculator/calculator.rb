@@ -11,6 +11,11 @@
 # Calculator functionality
 # Calculator should be able to do basic arithmetic (+,-, *, /)
 
+# Phase 2
+# Advanced Calculator functionality
+# Calculator should be able to do basic arithmetic (exponents, square roots)
+# Bonus
+
 def pow(a,b)
   power=1
   for i in 1..b
@@ -53,12 +58,24 @@ else
   puts "The answer is #{ans}"
 end
 
+# Trip Calculator
+# Calculate a trip time and cost given inputs for
+# distance
+# miles per gallon
+# price per gallon
+# speed in miles per hour
 
-
-# Phase 2
-# Advanced Calculator functionality
-# Calculator should be able to do basic arithmetic (exponents, square roots)
-# Bonus
+# puts"Welcome to the trip calculator"
+# puts "Enter the distance that you are about to travel"
+# distance = gets.to_i
+# puts "Enter the milleage in miles/gallon"
+# no_of_miles = gets.to_i
+# puts "Enter the fuel price/gallon"
+# price = gets.to_i
+# puts"Enter the speed in miles/hour"
+# speed = gets.to_i
+# puts "The total trip time to be taken is #{(distance/speed).to_f}"
+# puts "Total cost to be incured for the trip is #{price * distance/no_of_miles }"
 # Mortgage Calculator
 # Calculate the monthly required payment given the other variables as input (look up the necessary variables)
 
@@ -66,11 +83,3 @@ end
 
 # BMI Calculator
 # Calculate the body mass index (BMI) for an individual, given their height and weight
-#
-# Trip Calculator
-# Calculate a trip time and cost given inputs for
-#
-# distance
-# miles per gallon
-# price per gallon
-# speed in miles per hour
