@@ -1,0 +1,23 @@
+<h2>All about: <%= @noodles['name'] %></h2>
+<a href="/noodles/<%= @noodles['id'] %>/edit">Touch up these noods</a>
+|
+<a href="/noodles/<%= @noodles['id'] %>/delete">Delete these noods ASAP</a>
+|
+<a href="/noodles">Check out other noods</a>
+
+<p>
+  <strong>Country of Origin: </strong>
+  <%= @noodles['country_of_origin'] %>
+</p>
+
+<p>
+  <strong>Deliciousness (out of 10): </strong>
+  <%= @noodles['deliciousness'] %>
+</p>
+
+<p>
+  <strong>Description: </strong>
+  <%= @noodles['description'] %>
+</p>
+
+<img src="<%= @noodles['image_url'] %>" alt=" <%= @noodles['name'] %>">

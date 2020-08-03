@@ -1,0 +1,42 @@
+<h2>Edit noods: <%= @noodles['name'] %></h2>
+
+<form action="/noodles/<%= @noodles['id'] %>" method="post">
+
+<label>
+  Name:
+  <input type="text" name="name" value="<%= @noodles['name'] %>">
+</label>
+<br/>
+<br/>
+
+<label>
+  Deliciousness (out of 10):
+  <input type="text" name="deliciousness" value="<%= @noodles['deliciousness'] %>">
+</label>
+<br/>
+<br/>
+
+<label>
+  Country of origin:
+  <input type="text" name="country_of_origin" value="<%= @noodles['country_of_origin'] %>">
+</label>
+<br/>
+<br/>
+
+<label>
+  Description:
+  <input type="text" name="description" value="<%= @noodles['description'] %>">
+</label>
+<br/>
+<br/>
+
+<label>
+  Image URL:
+  <input type="text" name="image_url" value="<%= @noodles['image_url'] %>">
+</label>
+<br/>
+<br/>
+
+<input type="submit" value="Update noods">
+
+</form>
