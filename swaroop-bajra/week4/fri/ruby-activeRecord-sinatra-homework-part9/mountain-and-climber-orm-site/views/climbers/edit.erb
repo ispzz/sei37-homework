@@ -1,0 +1,34 @@
+<h2>Edit Climber: <%= @climber.name %></h2>
+
+<form action="/climbers/<%= @climber.id %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @climber.name %>">
+  </label>
+  <br>
+
+  <label>
+    Country:
+    <input type="text" name="country" value="<%= @climber.country %>">
+  </label>
+  <br>
+
+  <label>
+    Climbed:
+      <select name="mountain_id">
+        <% @climbers.each do |climber| %>
+        <option value=" <%= climber.mountain.id %> "><%= climber.mountain.name %></option>
+        <% end %>
+      </select>
+  </label>
+  <br>
+
+  <label>
+    Image:
+    <input type="text" name="image_url" value="<%= @climber.image_url %>">
+  </label>
+  <br>
+
+  <input type="submit" value="Update Climber">
+</form>

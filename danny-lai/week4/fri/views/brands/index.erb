@@ -1,0 +1,15 @@
+<h2>All car brands</h2>
+
+<a href="/brands/new">Add brand</a>
+
+<ul>
+  <% @brands.each do |row| %>
+  <li>
+    <a href="/brands/<%= row['id'] %>">
+      <%= row['name'] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<a href="/">Return to home</a>

@@ -1,0 +1,13 @@
+<h2>All about the: <%= @car['name'] %></h2>
+
+<a href="/cars">Return to index</a>
+|
+<a href="/cars/<%= @car['id'] %>/edit">Edit this car</a>
+|
+<a href="/cars/<%= @car['id'] %>/delete">Delete this car</a>
+<br>
+<br>
+
+
+<img src="<%= @car['image_url'] %>" alt="<%= @car['name'] %>" class="car">
+<p>Click here to learn more about <a href="/brands/<%= @car['brand_id'] %>"><%= @car.brand.name %></a> </p>

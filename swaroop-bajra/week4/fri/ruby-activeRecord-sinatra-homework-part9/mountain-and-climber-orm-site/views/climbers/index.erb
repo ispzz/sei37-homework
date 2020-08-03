@@ -1,0 +1,11 @@
+<h2>All Climbers</h2>
+<ul>
+  <% @climbers.each do |climber| %>
+  <li>
+    <!-- need an <a> tag to link to the show page -->
+    <a href="/climbers/<%= climber.id %>"><%= climber.name %></a>
+    (climbed <a href="/mountains/<%= climber.mountain.id %>"><%= climber.mountain.name %></a>)
+
+  </li>
+  <% end %>
+</ul>
