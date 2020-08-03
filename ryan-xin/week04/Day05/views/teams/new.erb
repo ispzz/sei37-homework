@@ -1,0 +1,27 @@
+<h2>Add New Team</h2>
+<div class="divider"> </div>
+
+<form action="/teams" method="post">
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="nickname">Nickname</label><br>
+  <input type="text" id="nickname" name="nickname"><br>
+  <label for="founded">Founded</label><br>
+  <input type="text" id="founded" name="founded"><br>
+  <label for="stadium">Stadium</label><br>
+  <input type="text" id="stadium" name="stadium"><br>
+  <label for="logo_url">Logo URL</label><br>
+  <input type="text" id="logo_url" name="logo_url"><br>
+  <label for="manager">Manager</label><br>
+  <input type="text" id="manager" name="manager"><br>
+
+  <p>UCL Qualified</p>
+  <div class="radio">
+    <input class="radio_circle" type="radio" id="ucl" name="ucl" value=true>
+    <label class="radio_label" for="ucl">Yes</label>
+    <input class="radio_circle" type="radio" id="ucl" name="ucl" value=false>
+    <label class="radio_label" for="ucl">No</label>
+  </div>
+
+  <button>Add Team</button>
+</form>
