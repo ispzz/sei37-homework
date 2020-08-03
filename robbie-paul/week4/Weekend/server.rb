@@ -170,7 +170,7 @@ end
 
     post "/learners/:id" 
     learner = Learner.find params[:id]
-
+    
     # call the update method on it to change all its columns at once
     learner.update(
         name: params[:name],
