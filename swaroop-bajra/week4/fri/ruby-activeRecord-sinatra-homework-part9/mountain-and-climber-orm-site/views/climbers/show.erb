@@ -1,0 +1,15 @@
+<h2>All about: <%= @climber.name %></h2>
+<a href="/climbers/<%= @climber.id %>/edit">Edit this Climber</a>
+<a href="/climbers/<%= @climber.id %>/delete">Delete this Climber</a>
+
+<p>
+  <strong>Country:</strong>
+  <%= @climber.country %>
+</p>
+
+<p>
+  <strong>Climbed:</strong>
+  <%= @climber.mountain.name %>
+</p>
+
+<img src="<%= @climber.image_url %>" alt="<%= @climber.name%>">
