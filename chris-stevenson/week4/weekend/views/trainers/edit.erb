@@ -1,0 +1,26 @@
+<h1>Edit <%= @trainer['name'] %></h1>
+
+<form action="/trainers/<%= @trainer['id'] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @trainer['name'] %>">
+  </label>
+  <br>
+  <label>
+    Type One:
+    <input type="text" name="age" value="<%= @trainer['age'] %>">
+  </label>
+  <br>
+  <label>
+    Type Two:
+    <input type="text" name="home_town" value="<%= @trainer['home_town'] %>">
+  </label>
+  <br>
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%= @trainer['image_url'] %>">
+  </label>
+  <br>
+
+    <input type="submit" value="Submit!">
+</form>
