@@ -1,0 +1,24 @@
+<h2>About <%= @mountain.name %></h2>
+<a href="/mountains/<%= @mountain.id %>/edit">Edit this Mountain</a>
+<a href="/mountains/<%= @mountain.id %>/delete">Delete this Mountain</a>
+<p>
+  <strong>Location:</strong>
+  <%= @mountain.location %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @mountain.height %>m
+</p>
+
+<p>
+  <strong>Scalable:</strong>
+  <%= @mountain.scalable ? 'Yes' : 'No' %>
+</p>
+
+<p>
+  <strong>First Ascent:</strong>
+  <%= @mountain.first_ascent %>
+</p>
+
+<img src="<%= @mountain.image_url %>" alt="<%= @mountain.name %>">

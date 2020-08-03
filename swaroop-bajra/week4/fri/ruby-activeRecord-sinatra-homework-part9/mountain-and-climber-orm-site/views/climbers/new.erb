@@ -1,0 +1,35 @@
+<h2>Add New Climber</h2>
+
+<form action="/climbers" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name">
+  </label>
+  <br>
+
+  <label>
+    Country:
+    <input type="text" name="country">
+  </label>
+  <br>
+
+  <label>
+    Climbed:
+    <select name="mountain_id">
+      <% @climbers.each do |climber| %>
+      <option value=" <%= climber.mountain.id %> "><%= climber.mountain.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <br>
+
+  <label>
+    Image:
+    <input type="text" name="image_url">
+  </label>
+  <br>
+
+
+  <input type="submit" value="Create Climber">
+</form>
