@@ -1,0 +1,17 @@
+
+
+<h3> Matching Search Rusults: </h3>
+
+  <% @movie %>
+
+  <ul>
+    <% @movie.each do |name| %>
+      <li><strong> <%= name['title'] %> </strong></li>
+      <ul>
+        <li><span><p>Votes: <%= name['vote_average'] %> </p></span></li>
+        <li><span><p>Released: <%= name['release_date'] %> </p></span></li>
+        <li><span><p>Overview: <%= name['overview'] %> </p></span></li>
+      </ul>
+      <br>
+    <% end %>
+  </ul>

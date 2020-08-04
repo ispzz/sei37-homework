@@ -1,0 +1,10 @@
+<h2>Top Teams</h2>
+<div class="divider"> </div>
+
+<ul class="team_list">
+<% @teams.each do |team| %>
+  <li>
+    <h3><a href="/teams/<%= team.id %>"><%= team.name %></a></h3>
+  </li>
+<% end %>
+</ul>

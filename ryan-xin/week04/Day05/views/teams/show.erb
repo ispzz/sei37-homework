@@ -1,0 +1,35 @@
+<h2><%= @team.name %></h2>
+
+<div class="divider"> </div>
+
+
+<ul class="edit_navigation">
+  <li><a href="/teams/<%= @team.id %>/edit">Edit</a></li>
+  <li><a href="/teams/<%= @team.id %>/delete">Delete</a></li>
+</ul>
+
+<img class="team_logo" src="<%= @team.logo_url %>" alt="">
+<p>Name:</p>
+<h3><%= @team.name %></h3><br>
+<p>Nickname:</p>
+<h3><%= @team.nickname %></h3><br>
+<p>Founded:</p>
+<h3><%= @team.founded %></h3><br>
+<p>Stadium:</p>
+<h3><%= @team.stadium %></h3><br>
+<p>UCL Qualified:</p>
+<h3><%= @team.ucl ? "Yes" : "No" %></h3><br>
+
+<p>Top Players:</p>
+<ul>
+  <% @team.players.each do |player| %>
+    <li>
+      <h3><a href="/players/<%= player.id %>"><%= player.name %></a></h3>
+    </li>
+  <% end %>
+</ul>
+
+
+<!-- <h3>
+<%= @team.players.map { |player| player.name }.join(", ") %>
+</h3> -->
