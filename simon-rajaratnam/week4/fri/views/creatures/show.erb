@@ -1,0 +1,36 @@
+<h2>
+  <%=@creature.name %>
+</h2>
+
+<p>
+  <strong>Type : </strong>
+  <%=@creature.kind %>
+</p>
+
+<p>
+  <strong>Maximum Length : </strong>
+  <%=@creature.max_length %> m
+</p>
+
+<p>
+  <strong>Maximum Weight : </strong>
+  <%=@creature.max_weight %> kg
+</p>
+
+<p>
+  <strong>Found at : </strong>
+  <%=@creature.location.name %>
+</p>
+
+<p>
+  <strong>Description : </strong>
+  <%=@creature.description %>
+</p>
+
+  <img src="<%=@creature.image_url%>" alt="<%=@creature.name%>" height="300px">
+
+
+
+<a href="/creatures/<%=@creature.id%>/edit">Edit Creature</a>
+
+<a href="/creatures/<%=@creature.id%>/delete">Remove Creature</a>
