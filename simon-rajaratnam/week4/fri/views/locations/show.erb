@@ -1,0 +1,27 @@
+<h2>
+  <%=@location.name %>
+</h2>
+
+<p>
+  <strong>Location : </strong>
+  <%=@location.location %>
+</p>
+
+<p>
+  <strong>Known Creatures : </strong>
+  <%@creatures.each do |creature|%>
+    <a href="/creatures/<%=creature['id']%>">
+    <%=creature['name']%></a>
+  <%end%>
+</p>
+
+<p><% @location.creatures.each do |creature|%>
+      <%= creature.name %>
+      <%end%>
+</p>
+
+<img src="<%=@location.image_url%>" alt="<%=@location.name%>" height="300px">
+
+<a href="/locations/<%=@location.id%>/edit">Edit Dive Site</a>
+
+<a href="/locations/<%=@location.id%>/delete">Remove Dive Site</a>

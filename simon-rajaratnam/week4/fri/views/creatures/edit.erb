@@ -1,0 +1,43 @@
+<h2>Edit Creature : <%=@creature['name']%></h2>
+
+<form action="/creatures/<%=@creature[:id]%>" method="post">
+
+  <label>
+    Name :
+    <input type="text" name="name" value="<%=@creature['name']%>">
+  </label>
+  <br>
+
+  <label>
+    Type :
+    <input type="text" name="kind" value="<%=@creature['kind']%>">
+  </label>
+  <br>
+
+  <label>
+    Maximum Length :
+    <input type="text" name="max_length" value="<%=@creature['max_length']%>">
+  </label>
+  <br>
+
+  <label>
+    Maximum Weight :
+    <input type="text" name="max_weight" value="<%=@creature['max_weight']%>">
+  </label>
+  <br>
+
+  <label>
+    Description :
+    <input type="text" name="description" value="<%=@creature['description']%>">
+  </label>
+  <br>
+
+  <label>
+    Image URL :
+    <input type="text" name="image_url" value="<%=@creature['image_url']%>">
+
+  </label>
+  <br>
+
+  <input type="submit" value="Update Creature">
+</form>
