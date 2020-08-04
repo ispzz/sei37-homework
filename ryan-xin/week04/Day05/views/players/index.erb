@@ -1,0 +1,10 @@
+<h2>Top Players</h2>
+<div class="divider"> </div>
+
+<ul class="player_list">
+  <% @players.each do |player| %>
+  <li>
+    <h4><a href="/players/<%= player.id %>"><%= player.name %></a></h4>
+  </li>
+  <% end %>
+</ul>
