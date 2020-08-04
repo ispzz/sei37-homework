@@ -1,0 +1,15 @@
+<h2> all learners </h2>
+
+(Learner list appears here)
+
+<ul>
+<% @learners.each do |learner| %>
+
+    <li>
+        <a href="/learners/<%= learner['id']%>">
+            <%= learner['name'] %>
+        </a>
+    </li>
+
+<% end %>
+</ul>

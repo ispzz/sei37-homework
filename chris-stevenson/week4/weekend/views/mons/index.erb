@@ -1,0 +1,11 @@
+<h2>All Pokemon</h2>
+
+<ol>
+  <% @results.each do |mon| %>
+    <li>
+      <a href="/mons/<%= mon['id'] %>">
+        <%= mon['name'] %>
+      </a>
+    </li>
+  <% end %>
+</ol>

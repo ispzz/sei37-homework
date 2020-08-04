@@ -1,0 +1,46 @@
+<h1>Edit <%= @mon['name'] %></h1>
+
+<form action="/mons/<%= @mon['id'] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @mon['name'] %>">
+  </label>
+  <br>
+  <label>
+    Type One:
+    <input type="text" name="type1" value="<%= @mon['type1'] %>">
+  </label>
+  <br>
+  <label>
+    Type Two:
+    <input type="text" name="type2" value="<%= @mon['type2'] %>">
+  </label>
+  <br>
+  <label>
+    Pokedex Entry:
+    <input type="text" name="pokedex" value="<%= @mon['pokedex'] %>">
+  </label>
+  <br>
+  <label>
+    Weight(kg):
+    <input type="text" name="weight" value="<%= @mon['weight'] %>">
+  </label>
+  <br>
+  <label>
+    Height(m):
+    <input type="text" name="height" value="<%= @mon['height'] %>">
+  </label>
+  <br>
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%= @mon['image_url'] %>">
+  </label>
+  <br>
+  <label>
+    Trainer ID:
+    <input type="text" name="trainer_id" value="<%= @mon['trainer_id'] %>">
+  </label>
+  <br>
+
+    <input type="submit" value="Submit!">
+</form>
