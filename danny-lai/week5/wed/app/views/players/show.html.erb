@@ -1,0 +1,25 @@
+<h2><%= @player.name %></h2>
+
+<%= link_to 'Edit Player', edit_player_path(@player.id) %>
+|
+<%= link_to 'Remove Player', player_path(@player.id), method: 'delete' %>
+
+<p>
+  <strong>Number:</strong> <%= @player.number %>
+</p>
+
+<p>
+  <strong>Position:</strong> <%= @player.position %>
+</p>
+
+<p>
+  <strong>Height:</strong> <%= @player.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong> <%= @player.weight %>
+</p>
+
+<% if @player.image.present? %>
+  <%= image_tag @player.image, alt: @player.name, class: 'player' %>
+<% end %>

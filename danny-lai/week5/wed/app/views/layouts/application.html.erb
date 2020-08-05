@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wed</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>NBA</h1>
+      <nav>
+        <%= link_to 'Teams Index', teams_path %>
+        |
+        <%= link_to 'Add Team', new_team_path %>
+        |
+        <%= link_to 'Players Index', players_path %>
+        |
+        <%= link_to 'Add Player', new_player_path %>
+      </nav>
+      <hr>
+    </header>
+
+    <%= yield %>
+    <footer>
+      <hr>
+      &copy; dphlai 2020
+    </footer>
+  </body>
+
+</html>

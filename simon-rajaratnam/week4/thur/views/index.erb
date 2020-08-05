@@ -1,0 +1,16 @@
+<h2> All The Mountains </h2>
+
+<ul>
+<% @results.each do |mountain| %>
+  <li>
+    <a href="/mountains/<%=mountain['id'] %>">
+      <%= mountain['name'] %></a>
+
+
+<% end %>
+
+  </li>
+
+</ul>
+
+<a href="/mountains/new">Create Entry</a>

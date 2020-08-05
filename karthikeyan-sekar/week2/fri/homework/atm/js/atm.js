@@ -37,7 +37,7 @@ ClearFields();
      }
      else {
 
-       $("<p> you have insufficient balance to do any further withdrawals </p>").appendTo(".clear");
+       $(`<p> **you have insufficient money to do withdrawals with balance ${total_balance} </p>`).appendTo(".clear");
        ClearFields();
        //$('<p>').removeClass("clear");
      }
@@ -76,7 +76,7 @@ ClearFields();
     }
     else {
 
-      $("<p> **you have insufficient balance to do any further withdrawals </p>").appendTo(".clear");
+      $(`<p> **you have insufficient money to do withdrawals with balance ${total_balance} </p>`).appendTo(".clear");
       ClearFields();
     }
     if (Number(savings_balance) == 0)
