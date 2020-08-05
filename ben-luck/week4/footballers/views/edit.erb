@@ -1,0 +1,43 @@
+<h2>Edit Footballer: <%= @footballer['name'] %></h2>
+
+<form action="/footballers/<%= @footballer['id'] %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @footballer['name'] %>">
+  </label>
+  <br>
+
+  <label>
+    Position:
+    <input type="text" name="species" value="<%= @footballer['position'] %>"">
+  </label>
+  <br>
+
+  <label>
+    Club:
+    <input type="text" name="description" value="<%= @footballer['club'] %>">
+  </label>
+  <br>
+
+  <label>
+    Kit Number:
+    <input type="text" name="kit_number" value="<%= @footballer['kit_number'] %>">
+  </label>
+  <br>
+
+  <label>
+    Retired:
+    <input type="text" name="retired" value="<%= @footballer['retired'] %>"> <!-- should be a checkbox! -->
+  </label>
+  <br>
+
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%= @footballer['profile_image'] %>">
+  </label>
+  <br>
+
+  <input type="submit" value="Update Footballer">
+
+</form>
