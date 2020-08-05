@@ -1,0 +1,35 @@
+
+<h2>An insider into: <%= @footballer['name'] %></h2>
+
+<a href="/footballers/<%= @footballer['id'] %>/edit">Edit This Footballer</a>
+|
+<a href="/footballers/<%= @footballer['id'] %>/delete">Delete This Footballer</a>
+
+<p>
+  <strong>Position:</strong>
+  <%= @footballer['position'] %>
+</p>
+
+<p>
+  <strong>Club:</strong>
+  <%= @footballer['club'] %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @footballer['kit_number'] %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @footballer['position'] %>
+</p>
+
+<p>
+  <strong>Retired?</strong>
+
+  <%= @footballer['retired'] == 1 ? 'Yes' : 'No' %>
+
+</p>
+
+<img src="<%= @footballer['profile_image'] %>" alt="<%= @footballer['name'] %>">
