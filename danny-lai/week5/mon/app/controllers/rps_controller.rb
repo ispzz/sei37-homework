@@ -12,7 +12,7 @@ class RpsController < ApplicationController
 
     @computer_throw = computer_choices.sample
 
-    @result = ''
+    # @result = ''
 
     if user_throw == @computer_throw
       @result = "You win!"
