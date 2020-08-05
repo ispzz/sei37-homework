@@ -1,0 +1,17 @@
+<h3>Holy duck, check out the: <%= @duck.name %></h3>
+
+<a href="<%= duck_edit_path( @duck.id ) %>">Edit duck</a>
+|
+<a href="<%= duck_destroy_path( @duck.id ) %>">Gently remove duck</a>
+
+<p>
+<strong>Rotundness:</strong>
+<%= @duck.rotundness %> out of 10
+</p>
+
+<p>
+<strong>Description:</strong>
+<%= @duck.overview %>
+</p>
+
+<%= image_tag @duck.image, alt: @duck.name, class: 'duck' %>

@@ -1,0 +1,13 @@
+<h3>List of Fish</h3>
+
+<ul>
+
+    <% @creatures.each do |animal| %>
+  <li>
+    <a href="/creatures/<%=animal['id']%>">
+    <%=animal['name']%></a>
+    <%end%>
+
+  </li>
+
+</ul>

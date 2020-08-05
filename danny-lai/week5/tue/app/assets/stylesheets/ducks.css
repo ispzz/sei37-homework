@@ -1,0 +1,11 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+img.duck {
+  max-width: 500px;
+}
+
+a {
+  color: rgb(0, 167, 72);
+}

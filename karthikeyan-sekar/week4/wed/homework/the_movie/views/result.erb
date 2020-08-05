@@ -1,9 +1,11 @@
-<p>
-  <img width="100" height="130" url="<%= @movieimage %>"  alt="">
-</p>
-<p class="title">
-  The movie <%= @movietitle %> was released on <%= @movierelease %>
-</p>
-<p class="overview">
-  The overview of <%= @movietitle %> is <%= @movieoverview %>
-</p>
+
+
+<ul>
+  <% @moviearr.each do |i| %>
+  <li><strong><%=i['title']%></strong></li>
+  <ul>
+    <li><img  src = <%= "http://image.tmdb.org/t/p/w154#{i['poster_path']}"%> alt=""></li>
+    <li><%=i['overview']%></li>
+  </ul>
+  <% end %>
+</ul>
