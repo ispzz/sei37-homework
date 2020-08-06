@@ -1,0 +1,36 @@
+<h2>Edit <%= @team.name %></h2>
+
+<!-- <%= render partial: "form" %> -->
+
+<%= form_for @team do |f| %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :founded %><br>
+  <%= f.text_field :founded %><br>
+
+  <%= f.label :stadium %><br>
+  <%= f.text_field :stadium %><br>
+
+  <%= f.label :manager %><br>
+  <%= f.text_field :manager %><br>
+
+  <%= f.label :logo, "Logo URL" %><br>
+  <%= f.text_field :logo %><br>
+
+  <%= f.label :ucl, "UCL Qualified" %><br>
+  <%= f.select :ucl, [["Yes", 1], ["No", 0]] %><br>
+
+  <ul>
+    <% Player.all.each do |player| %>
+      <%= label_tag do %>
+        <%= check_box_tag 'player_ids[]', player.id, player.team_id == @team.id ? checked = true : checked = false %>
+        <%= player.name %>
+      <% end %>
+    <% end %>
+  </ul>
+
+  <%= f.submit %>
+
+<% end %>
