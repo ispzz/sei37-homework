@@ -1,0 +1,6 @@
+<h2>List of Characters</h2>
+<ul>
+  <% @characters.each do |char| %>
+    <a href="/<%= char.id %>"><li><%= char.name %></li></a>
+  <% end %>
+</ul>

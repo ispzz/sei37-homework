@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Games</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/gameone">Magic 8 Ball</a></li>
+        <li><a href="/gametwo">Secret Number</a></li>
+        <li><a href="/gamethree">Rock Paper Scissors</a></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+
+
+  </body>
+
+
+</html>

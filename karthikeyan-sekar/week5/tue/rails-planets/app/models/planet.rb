@@ -1,0 +1,3 @@
+class Planet < ApplicationRecord
+
+end

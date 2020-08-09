@@ -1,0 +1,21 @@
+<h2>Edit <%= @player.name %></h2> 
+<hr>
+
+<form action="<%= player_path(@player.id) %>" method="post">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" value="<%= @player.name %>">
+<label for="age">Age:</label>
+<input type="text" id="age" name="age" value="<%= @player.age %>">
+<label for="position">Position:</label>
+<input type="text" id="position" name="position" value="<%= @player.position %>">
+<label for="number">Number:</label>
+<input type="text" id="number" name="number" value="<%= @player.number %>">
+<label for="country">Country:</label>
+<input type="text" id="country" name="country" value="<%= @player.country %>">
+<label for="image">Image:</label>
+<input type="text" id="image" name="image" value="<%= @player.image %>">
+
+
+<button>Update Player</button>
+</form>
