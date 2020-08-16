@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+h1, h2 {
+  font-family: 'Bungee Inline', cursive;
+}
+
+img.player {
+  max-height: 300px;
+}
+
+a {
+  color: rgb(0, 102, 255);
+}
+
+body {
+  font-family: Arial;
+}

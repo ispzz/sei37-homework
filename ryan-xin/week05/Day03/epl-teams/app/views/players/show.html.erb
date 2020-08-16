@@ -1,0 +1,21 @@
+<h2><%= @player.name %></h2>
+
+<nav class="edit">
+  <li><%= link_to "Edit", edit_player_path(@player.id) %></li>
+  <li><%= link_to "Delete", player_path(@player.id), method: "delete" %></li>
+</nav>
+
+<p>Nationality:</p>
+<h4><%= @player.nationality %></h4>
+
+<p>Age:</p>
+<h4><%= @player.age %></h4>
+
+<p>Position:</p>
+<h4><%= @player.position %></h4>
+
+<p>Number:</p>
+<h4><%= @player.number %></h4>
+
+<p>Team:</p>
+<h4><%= link_to @player.team.name, team_path(@player.team.id) %></h4>
