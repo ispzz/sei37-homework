@@ -28,7 +28,7 @@ class QuestionsController < ApplicationController
       "You may rely on it."
     ]
 
-    random_index = rand 1..possible_responses.length
+    random_index = rand 0...possible_responses.length
 
     @response = possible_responses[random_index]
 

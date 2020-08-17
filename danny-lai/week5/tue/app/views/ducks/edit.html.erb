@@ -1,0 +1,28 @@
+<h2>Edit duck: <%= @duck.name %></h2>
+
+<form action="<%= duck_path( @duck.id ) %>" method="post">
+
+<label>
+  Name: <input type="text" name="name" value="<%= @duck.name %>">
+</label>
+<br>
+
+<label>
+  Rotundness: <input type="text" name="rotundness" value="<%= @duck.rotundness %>">
+</label>
+<br>
+
+<label>
+  Description: <input type="text" name="overview" value="<%= @duck.overview %>">
+</label>
+<br>
+
+<label>
+  Image: <input type="text" name="image" value="<%= @duck.image %>">
+</label>
+<br>
+<br>
+
+<button>Update duck</button>
+
+</form>

@@ -1,0 +1,12 @@
+<h2>The Goats:</h2>
+
+<ul>
+<% @results.each do |footballer| %>
+
+  <li>
+    <a href="/footballers/<%= footballer['id'] %>">
+      <%= footballer['name'] %> | <%= footballer['position'] %>
+    </a>
+  </li>
+<% end %>
+</ul>

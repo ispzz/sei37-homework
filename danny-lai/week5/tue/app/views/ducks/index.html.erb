@@ -1,0 +1,9 @@
+<h3>Here are some nice ducks</h3>
+
+<ul>
+  <% @ducks.each do |row| %>
+  <li>
+    <a href="<%= duck_path(row.id) %>"><%= row.name %></a>
+  </li>
+  <% end %>
+</ul>

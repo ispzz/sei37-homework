@@ -1,0 +1,8 @@
+<h2>First Team</h2>
+<hr>
+
+<ul class="player_list">
+  <% @players.each do |player| %>
+    <li><a href="<%= player_path(player.id) %>"><%= player.name %></a></li>
+  <% end %>
+</ul>

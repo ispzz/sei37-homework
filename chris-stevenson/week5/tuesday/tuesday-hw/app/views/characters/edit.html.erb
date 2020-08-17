@@ -1,0 +1,12 @@
+<h2>Edit <%= @character.name %></h2>
+<form action="/<%= @character.id %>" method="post">
+  <label>Name: <input type="text" name="name" value="<%= @character.name %>"></label>
+  <br>
+  <label>Debut: <input type="text" name="debut" value="<%= @character.debut %>"></label>
+  <br>
+  <label>Age: <input type="text" name="age" value="<%= @character.age %>"></label>
+  <br>
+  <label> Image URL: <input type="text" name="image" value="<%= @character.image %>"></label>
+  <br>
+  <button>Submit</button>
+</form>

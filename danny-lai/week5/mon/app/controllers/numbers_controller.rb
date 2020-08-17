@@ -6,7 +6,7 @@ class NumbersController < ApplicationController
   def result
     @user_input = params[:number].to_i
     @computer_number = rand 1..10
-    @result = ''
+    # @result = ''
 
     if @user_input == @computer_number
       @result = "Correct guess!"
