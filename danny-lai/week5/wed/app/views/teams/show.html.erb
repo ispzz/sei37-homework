@@ -1,0 +1,26 @@
+<h2><%= @team.name %></h2>
+
+<%= link_to 'Edit Team', edit_team_path(@team.id) %>
+|
+<%= link_to 'Delete Team', team_path(@team.id), method: 'delete' %>
+
+<p>
+  <strong>Colours: </strong><%= @team.colours %>
+</p>
+
+<p>
+  <strong>Head Coach: </strong><%= @team.headcoach %>
+</p>
+
+<p>
+  <strong>Description: </strong><%= @team.description %>
+</p>
+
+<p>
+  <strong>Players:</strong>
+  <ul>
+    <% @team.players.each do |player| %>
+      <li><%= link_to player.name, player_path(player.id) %></li>
+    <% end %>
+  </ul>
+</p>

@@ -1,0 +1,27 @@
+body {
+  background-color: #A3F0FB;
+  color: black;
+  font-family: monospace;
+  }
+
+img.island{
+  max-width: 500px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: brown;
+}
+
+a:hover{
+  background-color: #1FDBE7;
+}
+
+footer{
+  color: blue;
+}
+
+h1,h2 {
+  color: #1F5BE7;
+}

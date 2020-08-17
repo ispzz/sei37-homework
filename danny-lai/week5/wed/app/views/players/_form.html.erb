@@ -1,0 +1,40 @@
+<%= form_for @player do |f| %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+
+  <%= f.label :number %><br>
+  <%= f.text_field :number %>
+  <br>
+  <br>
+
+  <%= f.label :position %><br>
+  <%= f.text_field :position %>
+  <br>
+  <br>
+
+  <%= f.label :height %><br>
+  <%= f.text_field :height %>
+  <br>
+  <br>
+
+  <%= f.label :weight %><br>
+  <%= f.text_field :weight %>
+  <br>
+  <br>
+
+  <%= f.label :team_id %><br>
+  <%= f.select :team_id, Team.pluck(:name, :id) %>
+  <br>
+  <br>
+
+  <%= f.label :image %><br>
+  <%= f.text_field :image %>
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,3 @@
+class Duck < ApplicationRecord
+  
+end
