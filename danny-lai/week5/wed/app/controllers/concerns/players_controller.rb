@@ -23,7 +23,7 @@ class PlayersController < ApplicationController
 
   def update
     player = Player.find params[:id]
-    player.update team_params
+    player.update player_params
     redirect_to(team_path(params[:id]))
   end
 
@@ -35,7 +35,7 @@ class PlayersController < ApplicationController
   private
 
     def player_params
-      params.require(:player).permit(:name, :number, :position, :height, :weight, :image, :artist_id)
+      params.require(:player).permit(:name, :number, :position, :height, :weight, :image, :team_id)
     end
 
 end

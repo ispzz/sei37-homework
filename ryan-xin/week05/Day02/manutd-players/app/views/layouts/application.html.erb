@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ManutdPlayers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+
+    <h1>Manchester United</h1>
+
+    <nav>
+      <ul>
+        <li><a href="<%= players_path %>">Players</a></li>
+        <li><a href="<%= players_new_path %>">Add Player</a></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+
+    <footer>
+      <hr>
+      <p>&copy 2020 Manchester United FC Ltd.</p>
+    </footer>
+
+  </body>
+</html>

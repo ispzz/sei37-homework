@@ -9,6 +9,6 @@ Rails.application.routes.draw do
 
   get '/movies/search' => 'movies#search'
 
-  get '/movies/result/:id' => 'movies#result'
+  get '/movies/:id' => 'movies#show'
 
 end

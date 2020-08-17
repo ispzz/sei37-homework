@@ -1,0 +1,29 @@
+<h2>Edit island: <%= @island.name %></h2>
+<form action="<%= island_path(@island.id) %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @island.name %>">
+  </label>
+  <br>
+<label>
+  Area:
+  <input type="text" name="area" value="<%= @island.area %>">
+</label>
+<br>
+<label>
+  Population:
+  <input type="text" name="population" value="<%= @island.population %>">
+</label>
+<br>
+<label>
+  Currency:
+   <input type="text" name="currency" value="<%= @island.currency %>">
+</label>
+<br>
+<label>
+  Image URL:
+  <input type="text" name="image" value="<%= @island.image %>">
+</label>
+<br>
+<button>Update Island</button>
+</form>
