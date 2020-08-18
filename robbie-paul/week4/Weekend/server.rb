@@ -112,7 +112,6 @@ post "/languages:id" do
         alive: params[:alive],
         image_url: params[:image_url]
     )
-
         redirect "/animals/#{ params[:id] }"
 end
 
@@ -153,8 +152,8 @@ end
 
     # 2. Show page - details for one row/item : GET /spotters/:id
 
-    get "/learners/:id/" do
-        @learner Learner.find params[:id]
+    get "/learners/:id" do
+        @learner = Learner.find params[:id]
         erb :'learners/show'
     end
 
@@ -168,7 +167,7 @@ end
     end
     # 2. Edit form submits here and we do a DB update: POST /spotters/:id
 
-    post "/learners/:id" 
+    post "/learners/:id" do
     learner = Learner.find params[:id]
     
     # call the update method on it to change all its columns at once

@@ -1,0 +1,26 @@
+<h2> Language <%= @language.name %> </h2>
+
+<a href="<%= language_edit_path( @language.id ) %>">Edit language</a>
+<a href="<%= language_destroy_path( @language.id ) %>">Destroy language</a>
+
+<p> 
+    <strong> Name: </strong>
+    <%= @language.name %> languge names
+</p>
+<p> 
+    <strong> family: </strong>
+    <%= @language.family %> language families
+</p>
+<p> 
+    <strong> Difficulty: </strong>
+    <%= @language.difficulty %> language difficulties
+</p>
+<p> 
+    <strong> Countries: </strong>
+    <%= @language.countries %> language countries
+</p>
+
+<%= image_tag @language.image, alt: @language.name, class: 'language' %>
+
+    
+
