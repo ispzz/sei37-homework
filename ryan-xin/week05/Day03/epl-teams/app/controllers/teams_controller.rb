@@ -14,6 +14,7 @@ class TeamsController < ApplicationController
   # READ
   def index
     @teams = Team.all
+    @team = Team.new
   end
   
   def show

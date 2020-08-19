@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Air Quality Search</title>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/main.js">
+  </script>
+  <style>
+  #movieDetails {
+       display: none;
+     }
+  </style>
+
+</head>
+<body>
+<h1>Air Quality Search by city</h1>
+<form id="searchForm">
+  <input type="text" id="searchText" value="Amsterdam">
+  <button id="lookupcity">search</button>
+</form>
+<hr/>
+<div id="searchResults">
+
+</div>
+<div id="movieDetails">
+    <!-- template for the show page, which we'll fill in using jQuery when we get the AJAX response from the /movie/:id API request -->
+
+    <button>Back to Results</button>
+
+
+  </div>
+</body>
+</html>

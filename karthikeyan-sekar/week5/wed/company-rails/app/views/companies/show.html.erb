@@ -1,0 +1,17 @@
+<h2> <%= @company.name %> </h2>
+
+
+<br>
+
+<p>
+  <strong>doe:</strong> <%= @company.doe %>
+</p>
+
+<p>
+  <strong>location:</strong> <%= @company.location %>
+</p>
+
+
+<% if @company.image.present? %>
+  <%= image_tag @company.image, alt: @company.name, class: 'company' %>
+<% end %>
