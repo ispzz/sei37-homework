@@ -1,0 +1,32 @@
+<h2>Edit spotter: <%= @spotter['name'] %></h2>
+
+<form action="/spotters/<%= @spotter['id'] %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @spotter['name'] %>">
+  </label>
+  <br>
+
+  <label>
+    Location:
+    <input type="text" name="location" value="<%= @spotter['location'] %>">
+  </label>
+  <br>
+
+  <!-- <label>
+    animal id:
+    <input type="text" name="animal_id" value="<%= @spotter['animal_id'] %>">
+  </label> -->
+  <label>
+    Animal:
+    <select name="animal_id">
+      <option></option>
+      <% Animal.all.each do |animal| %>
+        <option value="<%= animal.id %>" <%= "selected" if animal.id == @spotter["animal_id"] %>><%= animal.name %></option>
+      <% end %>
+    </select>
+  </label>
+  <input type="submit" value="Update Spotter">
+
+</form>

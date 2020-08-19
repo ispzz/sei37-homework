@@ -1,0 +1,19 @@
+<h2>Island <%= @island.name %></h2>
+<a href="<%= island_edit_path(@island.id) %>">Edit island</a>
+<a href="<%= island_destroy_path(@island.id) %>">destroy island</a>
+<p>
+  <strong>Area:</strong>
+  <%= @island.area %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @island.population %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @island.currency %>
+</p>
+
+<%= image_tag @island.image, alt: @island.name, class: 'island' %>

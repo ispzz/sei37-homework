@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Artists</h1>
+        <nav>
+          <%= link_to 'Artist Index', artists_path %>
+          |
+          <%= link_to 'Add Artist ', new_artist_path %>
+        </nav>
+        <hr>
+    </header>
+    <%= yield %>
+
+    <footer>
+      <hr>
+      &copy; Slap Sity Productions
+    </footer>
+
+  </body>
+</html>

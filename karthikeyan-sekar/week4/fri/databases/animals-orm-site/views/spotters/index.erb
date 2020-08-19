@@ -1,0 +1,11 @@
+<h2>All Spotters</h2>
+
+<ul>
+<% @spotters.each do |spotter|  %>
+  <li>
+     <a href="/spotters/<%= spotter['id'] %>">
+       <%= spotter['name'] %>
+     </a>
+  </li>
+<% end %>
+</ul>

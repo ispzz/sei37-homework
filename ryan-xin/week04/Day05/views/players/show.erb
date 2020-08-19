@@ -1,0 +1,23 @@
+<h2><%= @player.name %></h2>
+<div class="divider"> </div>
+
+<ul class="edit_navigation">
+  <li><a href="/players/<%= @player.id %>/edit">Edit</a></li>
+  <li><a href="/players/<%= @player.id %>/delete">Delete</a></li>
+</ul>
+
+<p>Name:</p>
+<h3><%= @player.name %></h3><br>
+<p>Nationality:</p>
+<h3><%= @player.nationality %></h3><br>
+<p>Age:</p>
+<h3><%= @player.age %></h3><br>
+<p>Position:</p>
+<h3><%= @player.position %></h3><br>
+<p>Number:</p>
+<h3><%= @player.number %></h3><br>
+<p>Team:</p>
+
+<!-- If I delete the team, @player.team.name doesn't work -->
+<h3><%= @player.team.name %></h3>
+

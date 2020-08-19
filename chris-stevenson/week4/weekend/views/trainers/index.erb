@@ -1,0 +1,11 @@
+<h2>All Trainers</h2>
+
+<ol>
+  <% @results.each do |trainer| %>
+    <li>
+      <a href="/trainers/<%= trainer['id'] %>">
+        <%= trainer['name'] %>
+      </a>
+    </li>
+  <% end %>
+</ol>

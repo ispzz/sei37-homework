@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>What the Duck</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>What the Duck</h1>
+    <nav>
+      <a href="<%= ducks_path %>">Index</a>
+      |
+      <a href="<%= ducks_new_path %>">Add duck</a>
+
+    </nav>
+    <%= yield %>
+
+  <footer>
+    &copy; dphlai 2020
+  </footer>
+
+  </body>
+
+</html>

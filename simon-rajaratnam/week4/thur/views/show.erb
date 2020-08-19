@@ -1,0 +1,30 @@
+<h2>About: <%=@mountain['name'] %></h2>
+
+<a href="/mountains/<%=@mountain['id']%>/edit">Edit Details</a>
+
+<p>
+<strong>Location: </strong>
+  <%=@mountain['location']%>
+</p>
+
+<p>
+<strong>Local name: </strong>
+  <%=@mountain['local_name']%>
+</p>
+
+<p>
+<strong>Peak elevation: </strong>
+  <%=@mountain['height']%>
+</p>
+
+<p>
+<strong>Description: </strong>
+  <%=@mountain['description']%>
+</p>
+
+<p>
+<strong>Location: </strong>
+  <%=@mountain['location']%>
+</p>
+
+<img src="<%= @mountain['image_url'] %>" alt="<%= @mountain['name'] %>">

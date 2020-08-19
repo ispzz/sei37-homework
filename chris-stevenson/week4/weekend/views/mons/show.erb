@@ -1,0 +1,38 @@
+<a href="/mons">Back to Pokemon</a>
+
+<h1><%= @mon['name'] %></h1>
+
+<a href="/mons/<%= @mon['id'] %>/edit">Edit this Pokemon</a>
+<a href="/mons/<%= @mon['id'] %>/delete">Delete this Pokemon</a>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mon['name'] %>
+</p>
+<p>
+  <strong>Type:</strong>
+  <%= @mon['type1'] %>
+</p>
+<% if @mon['type2'] != '' %>
+  <p>
+    <strong>Type:</strong>
+    <%= @mon['type2'] %>
+  </p>
+<% end %>
+<p>
+  <strong>Pokedex Description:</strong>
+  <%= @mon['pokedex'] %>
+</p>
+<p>
+  <strong>Weight(kg):</strong>
+  <%= @mon['weight'] %>
+</p>
+<p>
+  <strong>Height(m):</strong>
+  <%= @mon['height'] %>
+</p>
+<img src="<%= @mon['image_url'] %>" alt="<%= @mon['name'] %>">
+<p>
+  <strong>Trainer:</strong>
+  <%= @mon.trainer.name %>
+</p>

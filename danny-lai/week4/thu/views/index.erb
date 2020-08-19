@@ -1,0 +1,13 @@
+<h2>Who's hungry?</h2>
+<a href="/noodles/new">Submit your own noods</a>
+<p>Bruh check out at all these delicious noodles: </p>
+
+<ul>
+  <% @results.each do |noodle| %>
+  <li>
+    <a href="/noodles/<%= noodle['id'] %>">
+      <%= noodle['name'] %>
+    </a>
+  </li>
+  <% end %>
+</ul>

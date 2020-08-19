@@ -1,0 +1,49 @@
+<h3>Create Creature</h3>
+
+<form action="/creatures" method="post">
+
+  <label>
+    Name :
+    <input type="text" name="name">
+  </label>
+  <br>
+
+  <label>
+    Type :
+    <input type="text" name="kind">
+  </label>
+  <br>
+
+  <label>
+    Maximum Length :
+    <input type="text" name="max_length">
+  </label>
+  <br>
+
+  <label>
+    Maximum Weight :
+    <input type="text" name="max_weight">
+  </label>
+  <br>
+
+  <label>
+    Description :
+    <input type="text" name="description">
+  </label>
+  <br>
+
+  <label>
+    Image URL :
+    <input type="text" name="image_url">
+  </label>
+  <br>
+
+  <label>
+    Located at :
+    <input type="text" name="location_id">
+    Type 1<%=@locations.first.name%>
+  </label>
+  <br>
+
+  <input type="submit" value="Create Creature">
+</form>
