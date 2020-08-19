@@ -1,0 +1,15 @@
+<h2> All animals</h2>
+
+(animals list appears here) 
+
+<ul>
+<% @results.each do |animal| %>
+
+    <li>
+        <a href="/animals/<%= animal['id'] %>">
+            <%= animal['name'] %>
+        </a>
+    </li>
+
+<% end %>
+</ul>

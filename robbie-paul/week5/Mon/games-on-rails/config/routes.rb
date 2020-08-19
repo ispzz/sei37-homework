@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 
   # 2. FOrm submits here
 
-  get '/magic/answer' => 'magic'
+  # get '/magic/answer' => 'magic'
 
 # 3. Match URL
-  get '/magic/:query' => 'magic#do_answer'
+  get '/magic/answer' => 'magic#do_answer'
 
   
 end

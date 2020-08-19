@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(84, 35, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a, a:visited {
+    color: grey;
+}
+
+img {
+    max-width: 400px;
+}

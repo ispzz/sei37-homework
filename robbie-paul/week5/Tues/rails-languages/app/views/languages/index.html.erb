@@ -1,0 +1,11 @@
+<h1> Index of languages</h1>
+
+<ul>
+<% @languages.each do |l| %>
+    <a href="<%= language_path(l.id) %>">
+    <li>
+        <%= l.name %>
+    </li>
+    </a>
+<% end %>
+</ul>
