@@ -11,4 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
+//= require micromodal/dist/micromodal
 //= require_tree .
