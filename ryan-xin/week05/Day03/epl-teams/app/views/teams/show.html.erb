@@ -1,0 +1,32 @@
+<h2><%= @team.name %></h2>
+
+<nav class="edit">
+  <li><%= link_to "Edit", edit_team_path(@team.id) %></li>
+  <li><%= link_to "Delete", team_path(@team.id), method: "delete" %></li>
+</nav>
+
+<% if @team.logo.present? %>
+  <%= image_tag @team.logo, alt: @team.name, class: "logo" %>
+<% end %>
+
+<p>Founded:</p>
+<h4><%= @team.founded %></h4>
+<p>Stadium:</p>
+<h4><%= @team.stadium %></h4>
+<p>Manager:</p>
+<h4><%= @team.manager %></h4>
+<p>UCL Qualified:</p>
+<h4><%= @team.ucl ? "Yes" : "No" %></h4>
+<p>Players:</p>
+
+<ul>
+  <% @team.players.each do |player|%>
+    <li>
+    <%= link_to player.name, player_path(player.id) %>
+    </li>
+  <% end %>
+</ul>
+
+<% @team.players.each do |player|%>
+  <%= link_to player.name, player_path(player.id) %>
+<% end %>

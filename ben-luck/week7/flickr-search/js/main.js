@@ -1,4 +1,6 @@
 
+let currentPage = 1;
+
 const FLICKR_BASE_URL = 'https://api.flickr.com/services/rest';
 const FLICKR_API_KEY  = '2f5ac274ecfac5a455f38745704ad084';
 
@@ -6,8 +8,23 @@ $(document).ready(function(){
 
 $('#searchText').focus(); // kdb focus in form
 
-$('#searchForm').on('submit', function(ev){
+$('#nextPage').on('click', function(){
+  currentPage++;
+  $('#results').empty();
+  // console.log('Clicked!');
+  const next = $('#searchText').val();
+  getSearchResults( next );
+});
 
+$('#previousPage').on('click', function(){
+  currentPage--;
+  $('#results').empty();
+  // console.log('Clicked!');
+  const next = $('#searchText').val();
+  getSearchResults( next );
+});
+
+$('#searchForm').on('submit', function(ev){
   const query = $('#searchText').val();
   getSearchResults( query );
 
@@ -27,6 +44,7 @@ const getSearchResults = (queryText) => {
     api_key: FLICKR_API_KEY,
     text: queryText,
     format: 'json',
+    page: currentPage,
     nojsoncallback: 1
   })
   .done( data => displaySearchResults(data.photos) )
@@ -55,8 +73,3 @@ const displaySearchResults = (results) => {
 const generatePhotoURL = (photo, size='q') => {
   return `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_${size}.jpg`;
 };
-
-
-// button next page, global variable, replace current results, make pagination work - separate pages for param
-// infinite scroll - automatically start loading, js users view port - calculation
-// slide show - replace search results with a single large image
