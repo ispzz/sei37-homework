@@ -1,0 +1,23 @@
+<%= form_for @company do |f| %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.label :doe %><br>
+  <%= f.text_field :doe %>
+  <br>
+
+  <%= f.label :location %><br>
+  <%= f.text_field :location %>
+  <br>
+
+  <%= f.label :image, 'Image URL' %><br>
+  <%= f.text_field :image %>
+
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
