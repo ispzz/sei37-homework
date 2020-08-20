@@ -1,0 +1,24 @@
+<h2> <%= @artist.name %> </h2>
+
+<%= link_to 'Edit Artist', edit_artist_path(@artist.id) %>
+|
+<%= link_to 'Delete Artist', artist_path(@artist.id), method: 'delete' %>
+
+<br>
+
+<p>
+  <strong>Date of Birth:</strong> <%= @artist.dob %>
+</p>
+
+<p>
+  <strong>Nationality:</strong> <%= @artist.nationality %>
+</p>
+
+<p>
+  <strong>Instagram Followers (millions):</strong> <%= @artist.followers %>
+</p>
+
+
+<% if @artist.image.present? %>
+  <%= image_tag @artist.image, alt: @artist.name, class: 'artist' %>
+<% end %>

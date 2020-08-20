@@ -1,0 +1,9 @@
+<h2>The GOATS</h2>
+
+<ul>
+<% @artists.each do |artist| %>
+  <li>
+    <%= link_to artist.name, artist_path(artist.id) %>
+  </li>
+<% end %>
+</ul>
