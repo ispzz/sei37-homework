@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  release: 2020-08-05
+  downloads: 1
+  rank: 1
+  review: MyText
+
+two:
+  name: MyText
+  release: 2020-08-05
+  downloads: 1
+  rank: 1
+  review: MyText
