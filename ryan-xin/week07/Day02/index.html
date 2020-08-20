@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open AQ</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <h1>Search Open Air Quality</h1>
+  <form id="form">
+
+    <label for="city">Select a City</label><br>
+    <select name="city" id="city">
+      <option value="" id="default_city">-Select-</option>
+    </select><br>
+
+    <label for="location">Select a Location</label><br>
+    <select name="location" id="location">
+      <option value="" id="default_location">-Select-</option>
+    </select><br>
+
+    <button>Search</button>
+  </form>
+  <hr>
+  <div id="results">
+    <h2>City:</h2>
+    <p id="city_show"></p>
+    <h2>Country:</h2>
+    <p id="country_show"></p>
+    <h2>Location:</h2>
+    <p id="location_show"></p>
+    <h2>Parameters:</h2>
+    <ul id="measurements">
+    </ul>
+  </div>
+</body>
+
+</html>
