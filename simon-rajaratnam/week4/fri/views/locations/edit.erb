@@ -1,0 +1,25 @@
+<h2>Edit Dive Site : <%= @location['name'] %></h2>
+
+<form action="/locations/<%=@location['id']%>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%=@location['name'] %>">
+  </label>
+  <br>
+
+  <label>
+    Location:
+    <input type="text" name="location" value="<%=@location['location'] %>">
+  </label>
+  <br>
+
+  <label>
+    Image URL:
+    <input type="text" name="image_url" value="<%=@location['image_url'] %>">
+  </label>
+
+
+  <input type="submit" value="Update Record">
+
+</form>

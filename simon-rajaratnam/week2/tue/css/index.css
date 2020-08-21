@@ -58,35 +58,41 @@ body {
 
 .staticImage {
     display: inline-block;
-    width: 500px;
+    max-width: 500px;
+    height: auto;
     /*border: 1px solid green;*/
 }
 
 .theLinks {
     position: absolute;
-    font-size: 30px;
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    /* text-align: center; */
+}
+a:link {
+  color: white;
 }
 
+a:visited {
+  color: white;
+}
 #trivia {
-    top: 50%;
-    left: 60%;
-  /*background-color: white;*/
+    top: 470px;
+    left: 650px;
+    opacity: 0.0;
 }
-/*
-.trivia {
-  top: 50%;
-  left: 50%;
-}
-*/
-#homeown {
-  top: 50%;
-  left: 80%;
+#hometown {
+  top: 470px;
+  left: 800px;
+  opacity: 0.0;
 }
 
 .staticImage:hover  {
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
-#trivia:hover {
-  opacity: 0.;
+#trivia:hover, #hometown:hover {
+  opacity: 1;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }

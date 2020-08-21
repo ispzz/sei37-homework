@@ -1,0 +1,18 @@
+<h2><%= @player.name %></h2>
+<hr>
+
+<ul class="edit_nav">
+  <li><a href="<%= player_edit_path(@player.id) %>">Edit</a></li>
+  <li><a href="<%= player_delete_path(@player.id) %>">Delete</a></li>
+</ul>
+
+<%= image_tag @player.image, alt: @player.name, class: "image" %>
+
+<p>Age:</p>
+<h3><%= @player.age %></h3>
+<p>Position:</p>
+<h3><%= @player.position %></h3>
+<p>Number:</p>
+<h3><%= @player.number %></h3>
+<p>Country:</p>
+<h3><%= @player.country %></h3>

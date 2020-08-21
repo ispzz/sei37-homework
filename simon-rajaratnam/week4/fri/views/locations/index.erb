@@ -1,0 +1,12 @@
+<h3>List of destinations</h3>
+
+
+<ul>
+  <% @results.each do |location| %>
+
+  <li>
+    <a href="/locations/<%= location['id'] %>">
+    <%=location['name'] %></a>
+    <%end%>
+  </li>
+</ul>

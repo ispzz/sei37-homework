@@ -1,0 +1,15 @@
+<p><a href="/lookup">Click here to return to search</a></p>
+
+Here are your search results for "<%=@movie%>":
+
+<ul>
+<% @result.each do |movie| %>
+  <li><strong><%=movie['title']%></strong></li>
+    <ul>
+      <li>Release date: <%=movie['release_date']%></li>
+      <li>Overview: <%=movie['overview']%></li>
+      <li>Vote average: <%=movie['vote_average']%></li>
+    </ul>
+    <br>
+<% end %>
+<ul>

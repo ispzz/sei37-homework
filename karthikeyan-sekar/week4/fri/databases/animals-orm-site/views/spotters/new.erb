@@ -1,0 +1,29 @@
+<h2>Add New Spotter</h2>
+
+<form action="/spotters" method="post"> <!-- isn't /animals the index route??!! -->
+
+  <label>
+    Name:
+    <input type="text" name="name">
+  </label>
+  <br>
+
+  <label>
+    Location:
+    <input type="text" name="location">
+  </label>
+  <br>
+
+    <label>
+      Animal:
+      <select name="animal_id">
+        <% Animal.all.each do |animal| %>
+          <option value="<%= animal.id %>"><%= animal.name %></option>
+        <% end %>
+      </select>
+    </label>
+  <br>
+
+  <input type="submit" value="Create Spotter">
+
+</form>

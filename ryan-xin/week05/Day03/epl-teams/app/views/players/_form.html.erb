@@ -1,0 +1,23 @@
+<%= form_for @player do |f| %>
+  
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  
+  <%= f.label :nationality %><br>
+  <%= f.text_field :nationality %><br>
+  
+  <%= f.label :age %><br>
+  <%= f.text_field :age %><br>
+  
+  <%= f.label :position %><br>
+  <%= f.text_field :position %><br>
+  
+  <%= f.label :number %><br>
+  <%= f.text_field :number %><br>
+  
+  <%= f.label :team_id, "Select Team" %><br>
+  <%= f.select :team_id, Team.pluck(:name, :id) %><br>
+
+  <%= f.submit %>
+
+<% end %>

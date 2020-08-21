@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  founded: 1
+  stadium: MyText
+  logo: MyText
+  manager: MyText
+  ucl: false
+
+two:
+  name: MyText
+  founded: 1
+  stadium: MyText
+  logo: MyText
+  manager: MyText
+  ucl: false

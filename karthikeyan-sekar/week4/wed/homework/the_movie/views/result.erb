@@ -1,0 +1,11 @@
+
+
+<ul>
+  <% @moviearr.each do |i| %>
+  <li><strong><%=i['title']%></strong></li>
+  <ul>
+    <li><img  src = <%= "http://image.tmdb.org/t/p/w154#{i['poster_path']}"%> alt=""></li>
+    <li><%=i['overview']%></li>
+  </ul>
+  <% end %>
+</ul>

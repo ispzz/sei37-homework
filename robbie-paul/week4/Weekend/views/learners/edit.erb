@@ -1,0 +1,47 @@
+<h2> Edit learner: <%= @learner['name'] %> </h2>
+
+<form action="/learner/<%= @learner['id'] %>" method="post"> <!-- isn't /language the incdex route??!! --> 
+
+    <label> 
+        Name: 
+        <input type="text" name="name" value="<%= @learner['name'] %>">
+    </label>
+    <br>
+
+    // <label> 
+    //     Family: 
+    //     <input type="text" name="family" value="<%= @language['family'] %>">
+    // </label>
+    // <br>
+
+    // <label> 
+    //     Countries: 
+    //     <input type="text" name="countries" value="<%= @language['countries'] %>">
+    // </label>
+    // <br>
+
+    //  <label>
+    //     Description: 
+    //     <input type="text" name="description" value="<%= @language['description'] %>">
+    // </label>
+    // <br>
+
+    //  <label> 
+    //     Difficulty: 
+    //     <input type="text" name="difficulty" value="<%= @language['difficulty'] %>">
+    // </label>
+    // <br>
+     
+    //  <label> 
+    //     Alive: 
+    //     <input type="text" name="alive" value="<%= @language['alive'] %>">
+    // </label>
+    // <br>
+
+    // <label> 
+    //     Image URL: 
+    //     <input type="text" name="image_url" value="<%= @language['image_url'] %>">
+    // </label>
+    // <br>
+
+    // <input type="submit" value="Create Languages">

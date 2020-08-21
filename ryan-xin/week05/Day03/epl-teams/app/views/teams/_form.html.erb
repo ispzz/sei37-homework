@@ -1,0 +1,23 @@
+<%= form_for @team do |f| %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :founded %><br>
+  <%= f.text_field :founded %><br>
+
+  <%= f.label :stadium %><br>
+  <%= f.text_field :stadium %><br>
+
+  <%= f.label :manager %><br>
+  <%= f.text_field :manager %><br>
+
+  <%= f.label :logo, "Logo URL" %><br>
+  <%= f.text_field :logo %><br>
+
+  <%= f.label :ucl, "UCL Qualified" %><br>
+  <%= f.select :ucl, [["Yes", 1], ["No", 0]] %><br>
+
+  <%= f.submit %>
+
+<% end %>

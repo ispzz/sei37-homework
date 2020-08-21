@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+.container {
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+}
+
+header {
+    max-width: 90%;
+    height: auto;
+    
+}
+
+.opener {
+  position: absolute;
+}
+
+h1.opener {
+  font-weight: bold;
+  left: 375px;
+  font-size: 60px;
+}
+
+h3.opener {
+    /* top: 120px; */
+    left: 560px;
+    transform: rotate(345deg);
+    white-space: wrap;
+}

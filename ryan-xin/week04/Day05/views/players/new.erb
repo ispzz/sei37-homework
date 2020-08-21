@@ -1,0 +1,25 @@
+<h2>Add Player</h2>
+<div class="divider"> </div>
+
+<form action="/players" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="nationality">Nationality:</label><br>
+  <input type="text" id="nationality" name="nationality"><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br>
+  <label for="position">Position:</label><br>
+  <input type="text" id="position" name="position"><br>
+  <label for="number">Number</label><br>
+  <input type="text" id="number" name="number"><br>
+
+  <p>Select Team:</p>
+  <div class="radio">
+    <% @teams.each do |team| %>
+    <input class="radio_circle" type="radio" id="team_id" name="team_id" value="<%= team.id %>">
+    <label class="radio_label" for="team_id"><%= team.name %></label>
+    <% end %>
+  </div>
+
+<button>Add Player</button>
+</form>

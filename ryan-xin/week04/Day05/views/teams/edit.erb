@@ -1,0 +1,38 @@
+<h2>Edit <%= @team.name %></h2>
+<div class="divider"> </div>
+
+<form action="/teams/<%= @team.id %>" method="post">
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name" value="<%= @team.name %>"><br>
+  <label for="nickname">Nickname</label><br>
+  <input type="text" id="nickname" name="nickname" value="<%= @team.nickname %>"><br>
+  <label for="founded">Founded</label><br>
+  <input type="text" id="founded" name="founded" value="<%= @team.founded %>"><br>
+  <label for="stadium">Stadium</label><br>
+  <input type="text" id="stadium" name="stadium" value="<%= @team.stadium %>"><br>
+  <label for="logo_url">Logo URL</label><br>
+  <input type="text" id="logo_url" name="logo_url" value="<%= @team.logo_url %>"><br>
+  <label for="manager">Manager</label><br>
+  <input type="text" id="manager" name="manager" value="<%= @team.manager %>"><br>
+  
+  <p>UCL Qualified</p>
+  <div class="radio">
+    <input class="radio_circle" type="radio" id="ucl" name="ucl" value=true <%= @team.ucl ? "checked" : "" %>>
+    <label class="radio_label" for="ucl">Yes</label>
+    <input class="radio_circle" type="radio" id="ucl" name="ucl" value=false <%= @team.ucl ? "" : "checked" %> >
+    <label class="radio_label" for="ucl">No</label>
+  </div>
+
+  <p>Select Top Players:</p>
+  <div class="checkbox">
+  <% @players.each do |player| %>
+    <!-- Save selected player.id to players_id[] and send back the array -->
+    <input class="checkbox_circle" type="checkbox" id="players" name="players_id[]" value=<%= player.id %> <%= player.team_id == @team.id ? "Checked" : "" %> >
+    <label class="checkbox_label" for="players"><%= player.name %></label>
+  <% end %>
+  </div>
+
+  <button>Update Team</button>
+</form>
+
+

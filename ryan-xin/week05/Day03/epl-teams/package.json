@@ -1,0 +1,7 @@
+{
+  "name": "epl-teams",
+  "private": true,
+  "dependencies": {
+    "micromodal": "^0.4.6"
+  }
+}

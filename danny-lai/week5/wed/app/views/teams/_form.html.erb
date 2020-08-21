@@ -1,0 +1,25 @@
+<%= form_for @team do |f| %>
+
+  <%= f.label :name %>:<br>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+
+  <%= f.label :colours %>:<br>
+  <%= f.text_field :colours %>
+  <br>
+  <br>
+
+  <%= f.label :headcoach %>:<br>
+  <%= f.text_field :headcoach %>
+  <br>
+  <br>
+
+  <%= f.label :description %>:<br>
+  <%= f.text_field :description %>
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>

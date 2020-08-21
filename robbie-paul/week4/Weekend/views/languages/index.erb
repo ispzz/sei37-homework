@@ -1,0 +1,15 @@
+<h2> all languages </h2>
+
+(Languages list appears here)
+
+<ul>
+<% @languages.each do |language| %>
+
+    <li>
+        <a href="/languages/<%= language['id']%>">
+            <%= language['name'] %>
+        </a>
+    </li>
+
+<% end %>
+</ul>

@@ -1,0 +1,13 @@
+
+
+<p> names: </p>
+
+<ul>
+<% @result.each do |movie| %>
+    <li> Title: <%= movie['title'] %></li>
+    <li>Popularity: <%= movie['popularity'] %></li>
+    <li>Release date: <%=movie['release_date']%></li>
+    
+<% end %>
+</ul>
+
