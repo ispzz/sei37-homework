@@ -16,7 +16,7 @@ const grains = {
         }
     },
 
-    // 3. Loop through the amount of each square and add it to the total sum
+    // 3. Loop through the amount of grains on each square and add it to the total sum
     totalGrains: function() {
         for (let i = 1; i <= this.maxNoSquares; i++) {
             this.sum += this.grainsInSquare(i);

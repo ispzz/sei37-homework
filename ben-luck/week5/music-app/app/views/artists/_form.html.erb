@@ -1,0 +1,27 @@
+<%= form_for @artist do |f| %>
+
+<%= f.label :name %><br>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.label :dob %><br>
+  <%= f.text_field :dob %>
+  <br>
+
+  <%= f.label :nationality %><br>
+  <%= f.text_field :nationality %>
+  <br>
+
+  <%= f.label :followers %><br>
+  <%= f.text_field :followers %>
+  <br>
+
+  <%= f.label :image, 'Image URL' %><br>
+  <%= f.text_field :image %>
+
+  <br>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
