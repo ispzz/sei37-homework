@@ -10,8 +10,8 @@ const allergies = {
         128: "cats"
     },
 
-    // 1. list the scores and since we want them in ascending order we'll reverse the array
-    // if the object wasn't already in descending order we would use .sort() 
+    // 1. list the scores and since we want them in descending order we'll reverse the array
+    // if the object wasn't already in ascending order we would use .sort() 
     getKeys: function(){
         const allergyKeys = Object.keys(this.scorecard).map(Number).reverse();
         // console.log(allergyKeys);
