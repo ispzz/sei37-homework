@@ -22,7 +22,7 @@ const reverseArray = function(array) {
     console.log(array.reverse());
 }
 
-// reverseArray(array1);
+reverseArray(array1);
 
 // flatten
 const array2 = [ "Hello", ["World", 42] ];
@@ -49,7 +49,7 @@ const flatten = function(array) {
     console.log(output);
 }
 
-// flatten(array2);
+flatten(array2);
 
 // Recursive flatten
 // const flattenRecursion = function(array, output = []) {
