@@ -12,7 +12,7 @@ const evenOddSums = (array) => {
     array.forEach(num => (( num % 2 === 0 ) ? evenSum += num : (oddSum += num)));
     return [evenSum, oddSum];
 }
-console.log(evenOddSums([50, 60, 60, 45, 71]));
+// console.log(evenOddSums([50, 60, 60, 45, 71]));
 
 const multiTable = () => {
     for (let i = 0; i <= 12; i++) {
@@ -24,7 +24,7 @@ const multiTable = () => {
         
     }
 }
-console.log(multiTable());
+// console.log(multiTable());
 
 const multiTableTwo = () => {
     const output = [];
@@ -38,5 +38,13 @@ const multiTableTwo = () => {
     }
     return output;
 }
-console.log(multiTableTwo());
-console.table(multiTableTwo());
+// console.log(multiTableTwo());
+// console.table(multiTableTwo());
+
+// Solution using Array() and .map
+const anotherTable = () => {
+    const genNums = () => [...Array(13).keys()];
+    // console.log(genNums());
+	return genNums().map((row) => genNums().map((num) => row * num));
+}
+console.table(anotherTable());
