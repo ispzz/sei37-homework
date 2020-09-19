@@ -1,0 +1,21 @@
+<h2>Dog <%= @dog.name %></h2>
+<a href="<%= dog_edit_path(@dog.id) %>">Edit Dog</a>
+|
+<a href="<%= dog_destroy_path(@dog.id) %>">Destroy Dog!</a>
+
+<p>
+<strong>Breed:</strong>
+<%= @dog.breed %>
+</p>
+
+<p>
+<strong>Age:</strong>
+<%= @dog.age %>
+</p>
+
+<p>
+<strong>Description:</strong>
+<%= @dog.description %>
+</p>
+
+<%= image_tag @dog.image, alt: @dog.name, class: 'dog' %>

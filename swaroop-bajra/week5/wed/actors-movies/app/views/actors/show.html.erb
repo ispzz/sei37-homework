@@ -1,0 +1,21 @@
+<h2><%= @actor.name %></h2>
+
+<%= link_to 'Edit Actor', edit_actor_path(@actor.id) %>
+|
+<%= link_to 'Delete Actor', actor_path(@actor.id), method: 'delete' %>
+
+<p>
+  <strong>DOB: </strong> <%= @actor.dob %>
+</p>
+
+<p>
+  <strong>Nationality: </strong> <%= @actor.nationality %>
+</p>
+
+<p>
+  <strong>BIO: </strong> <%= @actor.bio %>
+</p>
+
+<% if @actor.image.present? %>
+<%= image_tag @actor.image, alt: @actor.name, class: 'actor' %>
+<% end %>

@@ -1,0 +1,27 @@
+body{
+   background-color: black;
+   color: white;
+   font-family: Helvetica, sans-serif;
+}
+
+img.dog{
+  max-width: 500px;
+}
+
+form{
+  box-sizing:border-box;
+  width:200px;
+  padding:20px;
+}
+
+input{
+  margin: 5px 0px 20px;
+}
+
+label{
+  margin: 10px 0;
+}
+
+a{
+  color: white;
+}

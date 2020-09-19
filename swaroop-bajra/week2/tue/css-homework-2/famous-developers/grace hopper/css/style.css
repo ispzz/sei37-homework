@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+  color: white;
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.firstImage{
+  margin-left: 100px;
+  width: 66.5%;
+}
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
