@@ -82,7 +82,8 @@ isIsosceles(triangle);
 
 function area(triangle){
   const perimeter = (triangle.sideA + triangle.sideB + triangle.sideC) / 2;
-  const triangleArea = Math.sqrt(perimeter*((perimeter-triangle.sideA)*(perimeter-triangle.sideB)*(perimeter-triangle.sideC)));
+  const triangleArea = Math.sqrt(perimeter * ((perimeter - triangle.sideA) * (perimeter -triangle.sideB) * (perimeter - triangle.sideC)));
+      console.log(`${triangleArea}`);
       console.log(`The Area of the triangle is ${triangleArea}`);
 };
 area(triangle);
@@ -126,14 +127,27 @@ const cartForParty = {
   proteinShake: "22.36"
 };
 
-function cashRegister(cartForParty){
-  const totalPrice = parseFloat(cartForParty.banana) + parseFloat(cartForParty.handkerchief) + parseFloat(cartForParty.Tshirt) + parseFloat(cartForParty.apple) + parseFloat(cartForParty.nalgene) + parseFloat(cartForParty.proteinShake);
-  console.log(`Total Price is ${totalPrice}`);
-};
-cashRegister(cartForParty);
-// Use for in loop
+// function cashRegister(cartForParty){
+//   const totalPrice = parseFloat(cartForParty.banana) + parseFloat(cartForParty.handkerchief) + parseFloat(cartForParty.Tshirt) + parseFloat(cartForParty.apple) + parseFloat(cartForParty.nalgene) + parseFloat(cartForParty.proteinShake);
+//   console.log(`Total Price is ${totalPrice}`);
+// };
+// cashRegister(cartForParty);
+// // Use for in loop
 
+const cashRegister = function ( cart) {
 
+  let runningTotal = 0;
+  //for..in
+  for( const key in cart ){
+
+    runningTotal += parseFloat(cart[key]);
+  } // for
+
+  console.log(runningTotal); // Print out the final runningTotal
+}; // cashRegister()
+
+  // Output
+  cashRegister(cartForParty);
 //  js-homework-bank.md
 // JavaScript Bank
 // In this homework, you'll create a basic bank in Javascript. The bank has many accounts and the following capabilities that you need to write.

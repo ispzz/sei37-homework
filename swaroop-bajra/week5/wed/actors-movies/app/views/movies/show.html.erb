@@ -1,0 +1,19 @@
+<h2>
+
+    <%= @movie.title %>
+
+  (<%= @movie.year.year %>)
+  <%= link_to @movie.actor.name, actor_path(@movie.actor.id) %>
+</h2>
+
+<%= link_to 'Edit Movie', edit_movie_path(@movie.id) %>
+|
+<%= link_to 'Delete Movie', movie_path(@movie.id), method: 'delete' %>
+
+<p>
+  <strong>Genre:</strong> <%= @movie.genre %>
+</p>
+
+<% if @movie.image.present? %>
+<%= image_tag @movie.image, alt: @movie.title, class: 'movie' %>
+<% end %>

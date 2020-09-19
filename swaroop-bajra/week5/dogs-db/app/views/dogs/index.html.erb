@@ -1,0 +1,11 @@
+<h3>List of Dogs</h3>
+<%= @dogs %>
+<ul>
+      <% @dogs.each do |d| %>
+      <li>
+
+        <%= d.name %>
+
+      </li>
+      <% end %>
+</ul>

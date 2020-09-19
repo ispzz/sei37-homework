@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ActorsMovies</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Actors & Movies</h1>
+      <nav>
+        <%= link_to 'Actors', actors_path %>
+        |
+        <%= link_to 'Add Actor', new_actor_path %>
+        |
+        <%= link_to 'Movies', movies_path %>
+        |
+        <%= link_to 'Add Movie', new_movie_path %>
+      </nav>
+      <hr>
+    </header>
+    <%= yield %>
+    <footer>
+      <hr>
+      &copy; SB Productions
+    </footer>
+  </body>
+</html>

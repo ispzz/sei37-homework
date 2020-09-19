@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsDogs</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Doggy Database</h1>
+    <nav>
+      <a href="<%= dogs_path %>">Index</a>
+      |
+      <a href="<%= dogs_new_path %>">Add Dog</a>
+    </nav>
+    <hr>
+    <%= yield %>
+    <hr>
+    <footer>
+      &copy; SB Productions 2020
+    </footer>
+  </body>
+</html>

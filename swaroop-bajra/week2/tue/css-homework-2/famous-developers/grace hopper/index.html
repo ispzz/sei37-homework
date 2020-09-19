@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<title>Grace Hopper</title>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Grace Hopper</h1>
+
+  <div class="firstImage">
+    <img src="https://i.imgur.com/G0ytriw.jpeg">
+  </div>
+
+  <div class="secondImage">
+    <img src="https://i.imgur.com/RHigNKd.jpeg">
+  </div>
+
+  <div class="thirdImage">
+    <img src="https://i.imgur.com/g3VZIf3.jpeg">
+  </div>
+
+  <div class="fourthImage">
+    <img src="https://i.imgur.com/72ZbkA2.jpeg">
+  </div>
+
+  <h2>Biography</h2>
+
+  <div class="bio">
+    <p>
+      Grace Brewster Murray Hopper (née Murray December 9, 1906 – January 1, 1992) was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. She popularized the idea of machine-independent programming languages, which led to the development of COBOL, an early high-level programming language still in use today.
+    </p>
+  </div>
+
+  <h2>Trivia</h2>
+
+  <div class="Trivia">
+    <p>
+      Prior to joining the Navy, Hopper earned a Ph.D. in mathematics from Yale University and was a professor of mathematics at Vassar College. Hopper attempted to enlist in the Navy during World War II but was rejected because she was 34 years old. She instead joined the Navy Reserves. Hopper began her computing career in 1944 when she worked on the Harvard Mark I team led by Howard H. Aiken. In 1949, she joined the Eckert–Mauchly Computer Corporation and was part of the team that developed the UNIVAC I computer. At Eckert–Mauchly she began developing the compiler. She believed that a programming language based on English was possible. Her compiler converted English terms into machine code understood by computers. By 1952, Hopper had finished her program linker (originally called a compiler), which was written for the A-0 System. During her wartime service, she co-authored three papers based on her work on the Harvard Mark 1.
+    </p>
+  </div>
+
+  <h2>Hometown</h2>
+
+  <div class="Hometown">
+    <p>
+      Hopper was born in New York City. She was the eldest of three children. Her parents, Walter Fletcher Murray and Mary Campbell Van Horne, were of Scottish and Dutch descent, and attended West End Collegiate Church.[8] Her great-grandfather, Alexander Wilson Russell, an admiral in the US Navy, fought in the Battle of Mobile Bay during the Civil War.
+    </p>
+  </div>
+</body>
+  <div id="map"></div>
+  <script>
+// Initialize and add the map
+function initMap() {
+  // The location of New York City
+  var newYork = {lat: 40.730610, lng: -73.935242};
+  // The map, centered at newYork
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: newYork});
+  // The marker, positioned at newYork
+  var marker = new google.maps.Marker({position: newYork, map: map});
+}
+    </script>
+  </script>
+  <!--Load the API from the specified URL
+  * The async attribute allows the browser to render the page while the API loads
+  * The key parameter will contain your own API key (which is not needed for this tutorial)
+  * The callback parameter executes the initMap() function
+  -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-7VRsMnQqCjhhiS2uU72ErxxOyONxjQg&callback=initMap">
+  </script>
+</html>
